@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './course.component.css'
 })
 export class CourseComponent {
+  title = "je suis un titre cours"
 
 }
