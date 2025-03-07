@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { CourseComponent } from './course/course.component';
 
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [CourseComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
