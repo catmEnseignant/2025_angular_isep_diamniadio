@@ -1,0 +1,42 @@
+<p>course works!</p>
+
+<p>Voici le titre du cours</p>
+<h3>{{title}}</h3>
+<p>7+3={{7+3}}</p>
+
+<!-- <input type="text" [values]="prenom_nom"> <br><br>
+<input type="text" [values]="profil"> <br><br> -->
+<p>Rebeuss</p>
+<h1>{{ getrecepteur()}}</h1>
+<h2>{{lesson}}</h2>
+
+
+<input type="text" [value]="prenom_nom">
+
+<input type="text" [value]="filiere"> <br>
+
+<h1>Bonjour classe</h1>
+<label>PRENOM</label> <br>
+<input type="text" [value]="prenom"><br>
+<br>
+<label>NOM</label> <br>
+<input type="text" [value]="nom"> <br>
+<br>
+<label>image</label> <br>
+<input type="text" [(ngModel)]="image_value" placeholder="Entez l'adresse"><br>
+<h1>L'image actuelle est :{{image_value}}</h1>
+
+<img [src]="image_value" [alt]="alt_value"><br>
+
+<h1>bonjour</h1>
+<button (click)="changeImage()">Changer l'image</button>
+<h2>change Image</h2>
+<button (click)="changeImageValue()">change Image Value</button>
+
+
+
+
+<p>voici notre lessson</p>
+
+
+<app-lessson></app-lessson>
