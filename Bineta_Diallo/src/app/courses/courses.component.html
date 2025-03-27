@@ -1,0 +1,42 @@
+<p>courses works!</p>
+
+
+<p>voici le titre du cours</p>
+<h3>{{title}}</h3>
+
+ <p> interpelation avec une methode {{getCompteur() }} 
+</p> 
+<h6>{{ getCompteur() + 4}}</h6>
+
+<h2>lesson</h2>
+
+<input type="text" [value]="prenom_nom">
+
+<hr>
+<h1>buenos tardes</h1>
+<label>PRENOM</label> <br>
+<input type="text" [value]="prenom">
+<label>NOM</label> <br>
+<input type="text" [value]="nom">
+<label>Image</label> <br>
+<input type="text" [(ngModel)]="image_value"> <br>
+<h1>l'image actuelle est : {{image_value}}</h1>
+<br>
+
+
+<img [src]="image_value" [alt]=""> <br>
+
+<h2>mes salutation</h2>
+<button (click)="changerImage()">changerImage</button>
+
+<p>bonjour les amis</p>
+<hr>
+<h3>debut du composant lesson</h3>
+<h1>changerImage</h1>
+<button (click)="changerImage()">changer image value</button>
+
+<app-lesson></app-lesson>
+
+
+
+
