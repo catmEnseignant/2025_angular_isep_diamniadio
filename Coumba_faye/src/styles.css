@@ -1,0 +1,104 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/* Styles généraux */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Conteneur du formulaire */
+  .container {
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Animation d'apparition */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Titre */
+  h2 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Champs du formulaire */
+  label {
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #0072ff;
+    box-shadow: 0 0 5px rgba(0, 114, 255, 0.5);
+  }
+  
+  /* Bouton de connexion */
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    box-shadow: 0 5px 15px rgba(0, 114, 255, 0.3);
+  }
+  
+  /* Lien mot de passe oublié */
+  a {
+    display: block;
+    margin-top: 15px;
+    color: #0072ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+
+
