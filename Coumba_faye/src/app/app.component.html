@@ -15,22 +15,22 @@
 <button type="submit">Se connecter</button>
 
 <a href="#">Mot de passe oublié ?</a> -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-black text-white">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar scroll</a>
+      <!-- <a class="navbar-brand" href="#">Navbar scroll</a> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link text-white" aria-current="page" routerLink="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Classes</a>
+            <a class="nav-link text-white" routerLink="/liste-classes">Classes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Matiere</a>
+            <a class="nav-link text-white" routerLink="/liste-matieres">Matiere</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -40,9 +40,5 @@
       </div>
     </div>
   </nav>
-    <h1>Composant Classe</h1>
-    <app-classe></app-classe>
-    
-    <h1>Composant Matiere</h1>
-    <app-matiere></app-matiere>
 
+<router-outlet></router-outlet>
