@@ -6,5 +6,5 @@ import { AppComponent } from './app.component';
 export const routes: Routes = [
     {path:"liste-classes",component:ClasseComponent},
     {path:"liste-matieres",component:MatiereComponent},
-    {path:"",component:ClasseComponent}
+    {path:"",component:ClasseComponent},
 ];

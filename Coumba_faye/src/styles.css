@@ -89,16 +89,39 @@ body {
     text-decoration: underline;
     color: #0056b3;
   } */ 
-  .row{
-    background-color: rgb(171, 179, 34);
-    padding: 10px;
+  .row {
+    background-color: #f5f7dc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
-.btn-btn-primary{
-    background-color: rgb(133, 97, 6);
+
+.btn-btn-primary {
+    background-color: #8b5e3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-btn-primary:hover {
+    background-color: #a56c46;
 }
 
 button {
-    padding: 10px;
-    border-radius: 6px;
-    
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #27ae60; /* Vert moderne */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #219150;
 }
