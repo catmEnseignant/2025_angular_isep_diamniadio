@@ -1,85 +1,29 @@
-<div class="container-fluid">
-  <nav class="navbar bg-dark mt-2 rounded-3">
+<div class="container-fluid mt-1">
+  <nav class="navbar navbar-expand-lg bg-dark rounded">
     <div class="container-fluid">
-      <a class="navbar-brand text-white"><b>Navbar</b></a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success text-white" type="submit">Search</button>
-      </form>
+      <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+      <img src="favicon.ico" class="img-thumbnail" style="width: 3%">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/liste-classes">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/liste-matieres">Matieres</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+          <button class="btn btn-secondary text-white" type="submit">Rechercher</button>
+        </form>
+      </div>
     </div>
   </nav>
 </div>
-<div class="container">
-  <h1 class="mt-2 text-white fs-8 bg-secondary p-2 rounded-3"><b>Hello gars</b></h1>
-  <span class="badge text-bg-info">{{title}}</span>
-  <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 row-cols-xs-1 row-cols-lg-4 g-4 mt-1">
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/wath.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This content is a little.</p>
-          <button class="btn btn-dark">Se connecter</button>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/wath.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a short card.</p>
-          <button class="btn btn-danger">Se connecter</button>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/wath.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This content is a little.</p>
-          <button class="btn btn-info">Se connecter</button>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="assets/wath.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This content is a little.</p>
-          <button class="btn btn-primary">Se connecter</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container mt-2">
-  <table class="table table-dark table-striped table-hover">
-    <thead class="table-primary">
-      <tr>
-        <th>Nom</th>
-        <th>Prenom</th>
-        <th>Age</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Oumar</td>
-        <td>Diao</td>
-        <td>22</td>
-      </tr>
-      <tr>
-        <td>Oumar</td>
-        <td>Diao</td>
-        <td>22</td>
-      </tr>
-      <tr>
-        <td>Oumar</td>
-        <td>Diao</td>
-        <td>22</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<router-outlet></router-outlet>
