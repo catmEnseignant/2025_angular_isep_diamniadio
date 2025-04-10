@@ -11,10 +11,10 @@
             <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Classes</a>
+            <a class="nav-link text-white" href="/liste-classes">Classes</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" href="/liste-matieres" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Matiéres
             </a>
             <ul class="dropdown-menu">
@@ -35,11 +35,4 @@
       </div>
     </div>
   </nav>
-  <div class="card container-fluid">
-    <p>page d'Accueil</p>
-    <h1>Debut Composant Classes</h1>
-    <app-classe></app-classe>
-
-    <app-matieres></app-matieres>
-    <h1>Debut Composant Matieres</h1>
-  </div>
+ <router-outlet></router-outlet>
