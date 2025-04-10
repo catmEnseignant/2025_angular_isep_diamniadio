@@ -10,13 +10,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-white active"  href="#">Home</a>
+            <a class="nav-link text-white active" aria-current="page"   routerLink="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white active"  href="#">Classes</a>
+            <a class="nav-link text-white active"    routerLink="/list-classes">Classes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white active"  href="#">Matieres</a>
+            <a class="nav-link text-white active"  routerLink="/list-matieres">Matieres</a>
           </li>
           
           
@@ -28,12 +28,5 @@
       </div>
     </div>
   </nav>
-  <div class="card container-fluid">
-  <p>page d'accueil</p>
-
-  <h1>Debut composent</h1>
-  <app-classe></app-classe>
-
-  <h1>Debut composant matieres</h1>
-  <app-matiere></app-matiere>
-</div>
+  <router-outlet></router-outlet>
+  
