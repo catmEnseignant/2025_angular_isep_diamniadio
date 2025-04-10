@@ -9,14 +9,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link text-white" aria-current="page" routerLink="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">classes</a>
+          <a class="nav-link text-white" routerLink="/liste-classes">classes</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Matiere</a>
+          <a class="nav-link text-white" routerLink="/liste-matieres">Matieres</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -26,11 +26,7 @@
     </div>
   </div>
 </nav>
-<h1>Debut composant classe</h1>
-<app-classe></app-classe>
-
-<h2>Debut composant Matiere</h2>
-<app-matiere></app-matiere>
+<router-outlet></router-outlet>
 
 
 
