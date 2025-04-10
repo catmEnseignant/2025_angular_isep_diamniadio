@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "alette_ndongo": {
+    "Rokhaya-diouf": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/alette_ndongo",
+            "outputPath": "dist/rokhaya-diouf",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -27,10 +27,14 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -60,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "alette_ndongo:build:production"
+              "buildTarget": "Rokhaya-diouf:build:production"
             },
             "development": {
-              "buildTarget": "alette_ndongo:build:development"
+              "buildTarget": "Rokhaya-diouf:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -93,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "3ccee627-f719-4292-b810-4c48ff399ba9"
   }
 }
