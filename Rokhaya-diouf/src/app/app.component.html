@@ -11,10 +11,10 @@
           <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white active" aria-current="page" href="#">Classes</a>
+          <a class="nav-link text-white"  routerLink="/liste-classes">Classes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white active" aria-current="page" href="#">Matieres</a>
+          <a class="nav-link text-white " aria-current="page" href="/liste-matieres">Matieres</a>
         </li>
       </ul>
 
@@ -26,11 +26,4 @@
   </div>
 </nav>
 
-<div class="card container-fluid">
-  <h1>Debut composent classe</h1>
-  <app-classe></app-classe>
-
-  <h1>Debut composent Matieres</h1>
-  <app-matiere></app-matiere>
-
-</div>
+<router-outlet></router-outlet>
