@@ -1,0 +1,32 @@
+<p>coures works!</p>
+<p>Voici un titre de coures</p>
+<h1>{{title}}</h1>
+
+<p>6+9={{6+9}}</p>
+
+<h1>45+43={{45+43}}</h1>
+
+interpelation sur les methode : {{ getCompteur() +33}} <hr>
+
+
+<h1>l'image actuelle est {{image_value}}</h1>
+<label for="name">Nom :</label>
+<input type="text"  [value]="Nom" required>
+
+<label for="email">Email :</label>
+<input type="email"  [value]="mail" required>
+
+<label for="image">Image :</label>
+<input type="text" [(ngModel)]="image_value" placeholder="adresse">
+
+<input type="text" placeholder="">
+<img [src]="image_value" [alt]="alt_image"><br>
+
+ <h2>bonour baye </h2>
+<button (click)=" changeImage()">changer l'image</button>
+
+<button (click)="changeImageValue()">cliquer pour changer</button>
+        
+
+
+<app-lesson></app-lesson>
