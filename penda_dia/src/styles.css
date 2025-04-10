@@ -1,15 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-.btn-btn-moi{
-    background-color: rgb(151, 48, 211);
+.row{
+    background-color: rgb(199, 131, 188);
+    padding: 10px;
+    margin-top: 15px;
 }
 .btn-btn-primary{
-    background-color: blueviolet;
+    background-color: rgb(181, 75, 202);
 }
 
-button {
-    padding: 10px;
-    border-radius: 6px;
-    
-}
