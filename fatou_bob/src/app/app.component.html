@@ -1,39 +1,37 @@
-bonjours
-<button class="btn btn-primary">click me</button>
-<button class="btn btn-success">bouton vert</button>
-<button class="btn btn-danger">bouton rouge</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<input class="btn btn-primary" type="submit" value="Submit">
 
+<nav class="navbar navbar-expand-lg bg-black text-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Classees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Matieres</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="card container-fluid">
+    <p>Page d'accuell</p>
 
+    <h1>Debut composant Classe</h1>
+    <app-classe></app-classe>
 
-<table class="table">
-    <thead>
-        <tr scope="col">Bonjour</tr>
-        <tr scope="col">fatima</tr>
-        <tr scope="col">bob</tr>
-        <tr scope="col">🎈🎈🎓</tr>
-    </thead>
-    <body>
-        <tr>
-            <th scope="row">1</th>
-            <td>mark</td>
-            <td>otto</td>
-            <td>voiture</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>jocob</td>
-            <td>thornton</td>
-            <td>view</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">larry the brird</td>
-            <td>gddth</td>
-        </tr>
-    </body>
+    <h1>Debut composant Matieres</h1>
+    <app-matiere></app-matiere>
 
-</table>
-
-
+  </div>
