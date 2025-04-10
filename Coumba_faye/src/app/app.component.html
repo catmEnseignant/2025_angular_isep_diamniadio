@@ -1,4 +1,4 @@
-<h2>Connexion</h2>
+<!-- <h2>Connexion</h2>
 
 <label>Nom</label>
 <input type="text" placeholder="Entrez votre nom"> <br><br>
@@ -14,4 +14,35 @@
 
 <button type="submit">Se connecter</button>
 
-<a href="#">Mot de passe oublié ?</a>
+<a href="#">Mot de passe oublié ?</a> -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar scroll</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Matiere</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    <h1>Composant Classe</h1>
+    <app-classe></app-classe>
+    
+    <h1>Composant Matiere</h1>
+    <app-matiere></app-matiere>
+
