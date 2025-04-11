@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
-import { CouresComponent } from "./coures/coures.component";
+import { ClasseComponent } from './classe/classe.component';
+import { MatiereComponent } from './matiere/matiere.component'; 
 
 @Component({
   selector: 'app-root',
-  imports: [CouresComponent],
+  standalone: true,
+
+  //import de deux composant dans app
+  imports: [ClasseComponent, MatiereComponent], 
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] // ✅ pas styleUrl
 })
 export class AppComponent {
   title = 'angular_projet';
