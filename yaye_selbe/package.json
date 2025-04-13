@@ -1,5 +1,5 @@
 {
-  "name": "yaye-s-diouf",
+  "name": "yaye-selbe",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:yaye_s_diouf": "node dist/yaye_s_diouf/server/server.mjs"
+    "serve:ssr:yaye_selbe": "node dist/yaye_selbe/server/server.mjs"
   },
   "private": true,
   "dependencies": {

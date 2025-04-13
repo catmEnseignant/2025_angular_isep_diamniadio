@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "yaye_s_diouf": {
+    "yaye_selbe": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/yaye_s_diouf",
+            "outputPath": "dist/yaye_selbe",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "yaye_s_diouf:build:production"
+              "buildTarget": "yaye_selbe:build:production"
             },
             "development": {
-              "buildTarget": "yaye_s_diouf:build:development"
+              "buildTarget": "yaye_selbe:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9d008123-ef83-48ca-b277-acc85e2d4813"
   }
 }
