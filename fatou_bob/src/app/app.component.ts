@@ -8,7 +8,9 @@ import { MatiereComponent } from './matiere/matiere.component';
   imports: [RouterModule,RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
+  
 })
 export class AppComponent {
   title = 'fatou_bob';
+
 }
