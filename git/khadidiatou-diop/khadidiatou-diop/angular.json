@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "khadidiatou-diop": {
+    "Mayarame_sow": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/khadidiatou-diop",
+            "outputPath": "dist/mayarame-sow",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -29,7 +29,12 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "outputMode": "server",
+            "ssr": {
+              "entry": "src/server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -59,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "khadidiatou-diop:build:production"
+              "buildTarget": "Mayarame_sow:build:production"
             },
             "development": {
-              "buildTarget": "khadidiatou-diop:build:development"
+              "buildTarget": "Mayarame_sow:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b53a747b-3199-4181-a1b8-fa9ca3dd3bdc"
   }
 }
