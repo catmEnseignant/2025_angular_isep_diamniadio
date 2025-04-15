@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
-import { ClassesComponent } from './classes/classes.component';
-import { MatieresComponent } from './matieres/matieres.component';
+import { HomeComponent } from './home/home.component';
+
+
 
 export const routes: Routes = [
-    {path: 'matieres', component: MatieresComponent},
-    {path: 'classes', component: ClassesComponent},
-    {path: '', component: ClassesComponent},
+    {path: 'class', loadChildren:() => import("./Class/class.routes").then((m)=>m.ClassRoutes) 
+        
+    },
+    {path: '', component: HomeComponent},
 ];
