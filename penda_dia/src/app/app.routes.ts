@@ -1,11 +1,13 @@
 import { Routes } from '@angular/router';
 
-import { ClasseComponent } from './classe/classe.component';
-import { MatieresComponent } from './matieres/matieres.component';
+import { HomeComponent } from './home/home.component';
 
-//creer des router et les importer
-export const routes: Routes = [
-    {path:"liste-classes",component:ClasseComponent},
-    {path:"liste-matieres",component:MatieresComponent},
-    {path:"",component:ClasseComponent}
+export const APP_ROUTES: Routes = [
+    {path:"classes",
+        loadChildren:()=>import("./classes/classes.routes").then((m) =>m.CLASSE_ROUTES)
+    },
+    {path:"lesmatieres",
+        loadChildren:()=>import("./lesmatieres/lesmatieres.routes").then((m) =>m.MATIERES_ROUTES)
+    },
+    {path:"",component:HomeComponent}
 ];
