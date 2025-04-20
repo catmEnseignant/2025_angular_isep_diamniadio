@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterModule,RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ClasseComponent } from './classe/classe.component';
-import { MatieresComponent } from './matieres/matieres.component';
-
+import { MatiereComponent } from './matiere/matiere.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterModule,RouterOutlet,],
+  imports: [RouterOutlet,RouterModule,NavbarComponent,FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'alette_ndongo';
+  title = 'projet-angular';
 }

@@ -1,7 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-
 import { AppComponent } from './app.component';
-
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -16,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'alette_ndongo' title`, () => {
+  it(`should have the 'projet-angular' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('alette_ndongo');
+    expect(app.title).toEqual('projet-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, alette_ndongo');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, projet-angular');
   });
 });
