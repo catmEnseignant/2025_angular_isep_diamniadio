@@ -1,12 +1,13 @@
-import { ClasseComponent } from './classe/classe.component';
 import { Routes } from '@angular/router';
-import path from 'path';
-import { MatiereComponent } from './matiere/matiere.component';
-import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 
-export const routes: Routes = 
-[
-    {path:"liste-classes", component:ClasseComponent},
-    {path:"liste-matieres", component:MatiereComponent},
-    {path:"", component:ContactComponent}
+export const APP_ROUTES: Routes = [
+    {path:"classes",
+        loadChildren:() => import("./classes/classes.routes").then((c) => c.CLASSE_ROUTES),
+    },
+    {path:"matieres",
+       loadChildren:() => import("./matieres/matieres.routes").then((m) => m.MATIERE_ROUTES),
+    },
+    {path:"", component:HomeComponent}
 ];
+ 
