@@ -2,11 +2,14 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 .row{
-    background-color: rgb(199, 131, 188);
+    /* background-color: rgb(228, 86, 204); */
+    background-color: rgb(142, 181, 226);
+
     padding: 10px;
     margin-top: 15px;
 }
 .btn-btn-primary{
-    background-color: rgb(181, 75, 202);
+    background-color: rgb(42, 125, 219);
+    
 }
 

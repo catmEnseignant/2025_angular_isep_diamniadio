@@ -1,1 +1,38 @@
-<p>form-classe works!</p>
+
+<div class="-card container-fluid" style="margin-top: -5.9%; background-color:white;">
+
+    <div class="-card-hearder">
+
+        <div>
+            <div class="col-4" >
+                <h4>Ajouter une classe</h4>
+         </div>
+
+<div class="card-body">
+
+    <form [formGroup]="classform" (ngSubmit)="storeClasse()">
+        <div class="mb-3" id="valor">
+
+          <label for="Nom" class="form-label">Nom</label>
+          <input type="text" class="form-control" formControlName="Nom" > <br><br>
+       
+          <label for="Niveau" class="form-label">Niveau</label>
+          <input type="text" class="form-control" formControlName="Niveau"> 
+
+        </div>
+        
+        <div class="mb-3" id="cadre">
+
+          <label for="Serie" class="form-label">Serie</label>
+          <input type="text" class="form-control" formControlName="Serie"><br><br>
+       
+          <label for="nombre_eleve" class="form-label">Nombre d'èléves</label>
+          <input type="number" class="form-control" formControlName="nombre_eleve">
+
+        </div>
+    
+        <button type="submit" class="btn btn-primary" value="Enregistrer">Enregister</button>
+    </form>
+  </div>
+</div>
+</div>

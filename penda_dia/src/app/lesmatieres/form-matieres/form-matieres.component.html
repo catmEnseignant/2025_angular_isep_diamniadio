@@ -1,1 +1,37 @@
-<p>form-matieres works!</p>
+
+<div class="-card container-fluid" style="margin-top: -5.9%; background-color:white;">
+
+    <div class="-card-hearder">
+
+        <div>
+            <div class="col-4" >
+                <h4>Ajouter un matière</h4>
+         </div>
+
+<div class="card-body">
+    <form [formGroup]="matiereform" (ngSubmit)="storeMatiere()">
+        <div class="mb-3" id="valor">
+
+          <label for="Code" class="form-label">Code</label>
+          <input type="text" class="form-control" formControlName="Code"> <br><br>
+       
+          <label for="Nom" class="form-label">Nom</label>
+          <input type="text" class="form-control" formControlName="Nom"> 
+          
+        </div>
+        
+        <div class="mb-3" id="cadre">
+
+          <label for="Description" class="form-label">Description</label>
+          <input type="text" class="form-control" formControlName="Description"><br><br>
+       
+          <label for="Coefficient" class="form-label">Coefficient</label>
+          <input type="number" class="form-control" formControlName="Coefficient">
+
+        </div>
+    
+        <button type="submit" class="btn btn-primary" value="Enregistrer">Enregister</button>
+    </form>
+  </div>
+</div>
+</div>
