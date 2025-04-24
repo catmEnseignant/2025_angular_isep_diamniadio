@@ -8,14 +8,12 @@ import { Router } from 'express';
   styleUrl: './list-classe.component.css'
 })
 export class ListClasseComponent {
-   
-constructor(private route:Router) {
-  console.log("constructeur")
+constructor(private router:Router ) {
+  console.log('constructeur')
 }
 
-// addClasse(){
-//   this.route.navigate("/classe/form-classe")
-//   console.log("addClasse")
-// }
+addClasse(){
+  
+  console.log("addClasse")
 }
-
+}
