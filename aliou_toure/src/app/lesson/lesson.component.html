@@ -1,1 +1,38 @@
-<p>lesson works!</p>
+<h4 class="text-center">📘 Liste des Leçons</h4>
+
+<div class="card container-fluid">
+  <div class="card-header">
+    <div class="row">
+      <div class="col-4">
+        <h4>Liste des leçons</h4>
+      </div>
+      <div class="col-4 text-center">
+        <h4>Nombre de leçons : {{ lecons.length }}</h4>
+      </div>
+      <div class="col-4 text-end">
+        <button class="btn btn-warning">Ajouter une leçon</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-body container">
+    <table class="table table-striped table-bordered table-hover">
+      <thead class="table-warning">
+        <tr>
+          <th scope="col">Code</th>
+          <th scope="col">Titre</th>
+          <th scope="col">Matière</th>
+          <th scope="col">Durée</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let lecon of lecons">
+          <th scope="row">{{ lecon.code }}</th>
+          <td>{{ lecon.titre }}</td>
+          <td>{{ lecon.matiere }}</td>
+          <td>{{ lecon.duree }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

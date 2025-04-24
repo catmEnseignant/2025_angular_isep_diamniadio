@@ -1,0 +1,36 @@
+<h4 class="text-center">📚 Début du composant Classe</h4>
+
+<div class="card container-fluid">
+  <div class="card-header">
+    <div class="row">
+      <div class="col-4">
+        <h4>Liste des classes</h4>
+      </div>
+      <div class="col-4 text-center">
+        <h4>Nombre de classes : {{ classes.length }}</h4>
+      </div>
+      <div class="col-4 text-end">
+        <button class="btn btn-success">Ajouter une classe</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-body container">
+    <table class="table table-striped table-bordered table-hover">
+      <thead class="table-success">
+        <tr>
+          <th scope="col">Code</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Effectif</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let classe of classes">
+          <th scope="row">{{ classe.code }}</th>
+          <td>{{ classe.nom }}</td>
+          <td>{{ classe.effectif }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
