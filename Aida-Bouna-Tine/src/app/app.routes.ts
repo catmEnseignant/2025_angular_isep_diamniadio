@@ -11,14 +11,15 @@ export const APP_ROUTES: Routes = [
         loadChildren:() => import("./classes/classes.routes").then((m)=> m.CLASSE_ROUTES),
     },
    
-    {path:"",component:HomeComponent},
+  
 
 
     {path:"matieres",
         loadChildren:() => import("./matieres/matieres.routes").then((m)=> m.MATIERE_ROUTES),
     },
+    {path:"home",component:HomeComponent},
    
-    {path:"",component:HomeComponent},
+    {path:"",redirectTo:"/home",pathMatch:"full"},   
 
 ];
 
