@@ -3,23 +3,23 @@ import { FormBuilder ,FormGroup, ReactiveFormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-form-classe',
-  imports: [ ReactiveFormsModule],
+  imports: [ReactiveFormsModule],
   templateUrl: './form-classe.component.html',
   styleUrl: './form-classe.component.css'
 })
-export class FormClasseComponent {
 
+export class FormClasseComponent {
   classform:FormGroup
+
   constructor(private fb:FormBuilder){
     this.classform= this.fb.group({
       nom:[''],
       niveau:[''],
-      service:[''],
       serie:[''],
-      nombre_eleve:[''],
+      nombres_eleve:[''],
     })
   }
-  storeClasse(){
+  storClass(){
     console.log(this.classform.value)
   }
 }
