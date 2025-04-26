@@ -10,14 +10,16 @@ import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './form-classe.component.css'
 })
 export class FormClasseComponent {
+  
   classform:FormGroup 
+
 
   constructor( private fb:FormBuilder){
     this.classform = this.fb.group({
       nom:[''],
       niveau:[''],
       serie:[''],
-    nombre_elves:[],
+      nombre_eleves:[''],
 
       
     })
