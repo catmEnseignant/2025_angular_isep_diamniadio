@@ -1,1 +1,41 @@
-<p>form-matiere works!</p>
+<div class="card container-fluid">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-4">
+                <h4>Nombre de matieres</h4>
+            </div>
+            <div class="col-4">
+                <h4>Nombre de matire</h4>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="container">
+            <form [formGroup]="classform" (ngSubmit)="storeClasse()">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="nom" class="form-label">NOM</label>
+                        <input type="nom" class="form-control" formControlName="nom" id="nom">
+                    </div>
+                    <div class="col-6">
+                        <label for="Description" class="form-label">Description</label>
+                        <input type="description" class="form-control" formControlName="description" id="description">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="serie" class="form-label">Serie</label>
+                        <input type="serie" class="form-control" formControlName="serie" id="serie">
+                    </div>
+                    <div class="col-6">
+                        <label for="Coefficient" class="form-label">Coefficient</label>
+                        <input type="coefficient" class="form-control" formControlName="coefficient" id="coefficient">
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary">submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
