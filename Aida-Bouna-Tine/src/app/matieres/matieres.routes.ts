@@ -1,5 +1,5 @@
 import { Routes} from '@angular/router';
-import { MatiereComponent } from '../matiere/matiere.component';
+
 import { ListMatiereComponent } from './list-matiere/list-matiere.component';
 import { FormMatiereComponent } from './form-matiere/form-matiere.component';
 

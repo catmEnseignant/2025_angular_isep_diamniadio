@@ -1,1 +1,66 @@
-<p>form-matiere works!</p>
+<div class=" card container-fluid">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-4">
+                <h4>list des matieres</h4>
+            </div>
+            <div class="col-4">
+                <h4>Nombre de matieres</h4>
+            </div>
+            <div class="col-4">
+                
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="card container-fluid">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-4">
+                        <h4>Formulaire de matieres</h4>
+                    </div>
+                    <div class="col-4">
+                        <h4>Nombre de matieres</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="container">
+                    <form [formGroup]="matierform"(ngSubmit)="storClass()">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="nom" class="form-label">NOM</label>
+                                <input type="nom" class="form-control" formControlName ="Nom" id="nom">
+                            </div>
+                            <div class="col-6">
+                                <label for="formateur" class="form-label">Formateur</label>
+                                <input type="formateur" class="form-control" formControlName ="formateur" id="formateur">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="Nombre de matiere" class="form-label">Nombres de matiere</label>
+                                <input type="Nombre de matiere" class="form-control" formControlName ="nombres_matiere" id="nombre de matiere">
+                    </div>
+                            <div class="col-6">
+                                <label for="Type_matiere"class="form-label">Type de matieres</label>
+                                <input type="Type_matiere" class="form-control" formControlName = "Types_matiere" id="Types_matiere">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+        
+                </div>
+            </div>
+        </div>
+   
+    
+    </div>
+  
+</div>
+
+
