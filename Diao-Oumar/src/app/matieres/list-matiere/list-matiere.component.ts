@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class ListMatiereComponent {
 
+  constructor(private route:Router) {
+    console.log("constructeur")
+  }
+  public addMatieres () {
+    this.route.navigate(["matieres/form-matiere"]);
+    console.log("this.addMatieres")
+  }
 }

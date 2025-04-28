@@ -1,1 +1,30 @@
-<p>form-classe works!</p>
+<div class="container my-3">
+    <div class="row text-center text-info">
+        <div class="col-12">
+            <h1 class="fw-bold">Ajouter une classe</h1>
+        </div>
+    </div>
+    <form [formGroup]="classeform" (ngSubmit)="storeClasse()">
+    <div class="row">
+        <div class="col-md-6">
+            <label class="form-label text-primary fw-bold" for="nom">Nom</label>
+            <input class="form-control" type="text" formControlName="nom" id="nom" autocomplete="off">
+        </div>
+        <div class="col-md-6">
+            <label class="form-label text-primary fw-bold" for="niveau">Niveau</label>
+            <input class="form-control" type="text" formControlName="niveau" id="niveau" autocomplete="off">
+        </div>
+        <div class="col-md-6">
+            <label class="form-label text-primary fw-bold" for="serie">Serie</label>
+            <input class="form-control" type="text" formControlName="serie" id="serie" autocomplete="off">
+        </div>
+        <div class="col-md-6">
+            <label class="form-label text-primary fw-bold" for="nombre">Nombre d'élève</label>
+            <input class="form-control" type="text" formControlName="nombre" id="nombre" autocomplete="off">
+        </div>
+        <div class="col-md-12">
+            <button class="btn btn-info fw-bold w-100 mt-2" type="submit">Envoyer</button>
+        </div>
+    </div>
+    </form>
+</div>

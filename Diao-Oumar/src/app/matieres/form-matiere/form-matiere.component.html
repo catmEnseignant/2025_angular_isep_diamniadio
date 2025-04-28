@@ -1,1 +1,45 @@
-<p>form-matiere works!</p>
+<style>
+    label{
+        font-weight: 700;
+        color: teal;
+        padding: 5px 0;
+    }
+    h1{
+        font-weight: 800;
+        font-style: italic;
+    }
+</style>
+
+
+<div class="container my-3">
+    <div class="row text-center text-secondary">
+        <div class="col-12">
+            <h1>Ajouter une matiere</h1>
+        </div>
+    </div>
+    <form action="" class="row">
+      <div class="col-md-6">
+        <label class="form-label" for="nom">Nom</label>
+        <input class="form-control" type="text" name="nom" id="nom" autocomplete="off">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="email">E-mail</label>
+        <input class="form-control" type="email" name="email" id="email" autocomplete="off">
+      </div>
+      <div class="col-md-12">
+        <label class="form-label" for="adresse">Adresse</label>
+        <input class="form-control" type="text" name="adresse" id="adresse" autocomplete="off">
+      </div>
+      <div class="col-md-3">
+        <label class="form-label" for="ville">Ville</label>
+        <input class="form-control" type="text" name="ville" id="ville" autocomplete="off">
+      </div>
+      <div class="col-md-9">
+        <label class="form-label" for="pays">Pays</label>
+        <input class="form-control" type="email" name="pays" id="pays" autocomplete="off">
+      </div>
+      <div class="col-md-12">
+        <button class="btn btn-primary w-100 mt-2" type="submit">Envoyer</button>
+      </div>
+    </form>
+</div>
