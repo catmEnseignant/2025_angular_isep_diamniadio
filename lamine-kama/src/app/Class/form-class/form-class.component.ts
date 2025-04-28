@@ -11,6 +11,7 @@ export class FormClassComponent {
   constructor(private fb:FormBuilder){
     this.classForm = this.fb.group({
       nom:[''],
+      nbreClass:[''],
       serie:[''],
       niveau:[''],
     })
@@ -18,6 +19,6 @@ export class FormClassComponent {
 
   classForm:FormGroup
   storeClass(){
-    console.log("reuisii")
+   console.log( this.classForm.value)
   }
 }
