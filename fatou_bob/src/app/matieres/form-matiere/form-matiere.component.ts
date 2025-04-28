@@ -1,11 +1,32 @@
 import { Component } from '@angular/core';
 
+import { CommonModule } from '@angular/common';
+import {  FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-form-matiere',
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './form-matiere.component.html',
   styleUrl: './form-matiere.component.css'
 })
 export class FormMatiereComponent {
+  matiereform:FormGroup
+  
+
+  constructor(private fb:FormBuilder){
+    this.matiereform= this.fb.group({
+      nom:[''],
+      niveau:[''],
+      serie:[''],
+      nombre_eleve:['']
+    })
+    
+  }
+  storeClasse(){
+    console.log(this.matiereform.value)
+  }
 
 }
+
+
+

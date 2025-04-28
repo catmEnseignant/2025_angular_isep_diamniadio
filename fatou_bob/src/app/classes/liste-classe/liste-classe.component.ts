@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-liste-classe',
@@ -7,5 +9,15 @@ import { Component } from '@angular/core';
   styleUrl: './liste-classe.component.css'
 })
 export class ListeClasseComponent {
+
+
+constructor(private route:Router){
+  console.log("constructeurr")
+}
+
+  addClasse(){
+    return this.route.navigate(["/classes/form-classe"])
+   
+  }
 
 }
