@@ -15,6 +15,7 @@ export const APP_ROUTES: Routes = [
     loadChildren:() => import("./matieres/matieres.routes").then((m) => m.Matiere_ROUTES),
   },
 
+  {path:"home" ,component:HomeComponent},
 
-  {path:"",component:HomeComponent ,},
+  {path:"",redirectTo:"/home" ,pathMatch:"full"},
 ];

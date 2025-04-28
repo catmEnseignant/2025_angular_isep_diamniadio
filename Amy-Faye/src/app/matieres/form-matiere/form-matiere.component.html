@@ -1,1 +1,61 @@
-<p>form-matiere works!</p>
+<div class="card container-fluid">
+  <div class="card-header">
+    <div class="row">
+      <div class="col-4">
+        <h4>Liste des matieres</h4>
+      </div>
+
+      <div class="col-4">
+        <h4>Nombre des matieres</h4>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+  <div class="card-body">
+    <div class="container">
+      <form [formGroup]="matiereform" (ngSubmit)="storeMatiere()">
+        <div class="row">
+
+        <div class="col-6">
+          <label for="nom" class="form-label">Nom</label>
+          <input type="nom" class="form-control"formControlName="nom" id="nom">
+        </div>
+
+        <div class="col-6">
+          <label for="niveau" class="form-label">Niveau</label>
+          <input type="niveau" class="form-control"formControlName="niveau" id="niveau">
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-6">
+          <label for="serie" class="form-label">Sèrie</label>
+          <input type="serie" class="form-control"formControlName="serie" id="serie">
+        </div>
+
+        <div class="col-6">
+          <label for="nombre_eleve" class="form-label">Nombres d'eleve</label>
+          <input type="nombre_eleve" class="form-control"formControlName="nombre_eleve" id="number">
+        </div>
+
+      </div>
+
+       <br>
+      <div class="row">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+       
+       
+      </form>
+
+    </div>
+  
+  </div>
+</div>
+
+
