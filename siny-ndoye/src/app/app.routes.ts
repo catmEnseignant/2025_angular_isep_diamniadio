@@ -6,10 +6,12 @@ import path from 'path';
 
 export const APP_ROUTES: Routes = [
    {path:"Classes",
-    loadChildren:() => import("./Classes/classes.routes").then((m) => m.CLASSES_ROUTES),  
+    loadChildren:() => import("./Classes/classes.routes").then((m) => m.CLASSES_ROUTES)
     },
     {path:"matieres",
-        loadChildren:()=> import("./matieres/matieres.routes").then((m) => m.MATIERES_ROUTES),
+        loadChildren:()=> import("./matieres/matieres.routes").then((m) => m.MATIERES_ROUTES)
     },
-    {path:"",component:HomeComponent},
+    {path:"home",component:HomeComponent},
+
+    {path:"",redirectTo:"/home",pathMatch:"full"},
 ];
