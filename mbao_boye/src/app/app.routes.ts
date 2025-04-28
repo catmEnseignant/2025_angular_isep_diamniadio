@@ -8,9 +8,7 @@ import { HomeComponent } from './home/home.component';
 
 export const APP_Routes: Routes = [
   {
-    path: 'classes',
-    loadChildren: () =>
-      import('./classes/classes.routes').then((m) => m.CLASSES_ROUTES),
+    path: 'classes', loadChildren: () => import('./classes/classes.routes').then((m) => m.CLASSES_ROUTES),
   },
 
   { path: "", component: HomeComponent },

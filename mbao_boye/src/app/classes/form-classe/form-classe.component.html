@@ -1,1 +1,47 @@
-<p>form-classe works!</p>
+
+<div class="card container-fluid">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-4">
+                <h4>Listes des classes</h4>
+            </div>
+            <div class="col-4">
+                <h4>Nombre de classes</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card-body">
+    <div class="container">
+        <form [formGroup]="classform" (ngSubmit)="storeClasse()">
+          <div class="row">
+                <div class="col-6">
+                <label for="nom" class="form-label">Nom</label>
+                <input type="nom" class="form-control" formControlName="nom"  id="nom" >
+                </div>
+
+                <div class="col-6">
+                    <label for="niveau" class="form-label">Niveau</label>
+                    <input type="niveau" class="form-control" formControlName="niveau" id="niveau" >
+                    </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+                <label for="serie" class="form-label">Serie</label>
+                <input type="serie" class="form-control" formControlName="serie" id="serie" >
+            </div>
+
+            <div class="col-6">
+                <label for="nombres eleves" class="form-label">Nombres eleves</label>
+                <input type="nombres eleves" class="form-control" id="nombre eleves" >
+            </div>
+      </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+        
+  </div>
+
+</div>
