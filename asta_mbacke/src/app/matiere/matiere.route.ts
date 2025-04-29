@@ -6,8 +6,8 @@ import { FormMatiereComponent } from './form-matiere/form-matiere.component';
 
 
 export const MATIERES_ROUTES: Routes = [
-    { path:"liste-matieres",component:ListeMatiereComponent},
-    { path:"form-matieres",component:FormMatiereComponent},
+    { path:"liste-matiere",component:ListeMatiereComponent},
+    { path:"form-matiere",component:FormMatiereComponent},
   
 
   {path:"",redirectTo:"/liste-matieres",pathMatch:"full"},
