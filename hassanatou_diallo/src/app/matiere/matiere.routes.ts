@@ -1,10 +1,12 @@
 import { Routes } from '@angular/router';
-import { ClassesComponent } from '../classes/classes.component';
-import { Component } from '@angular/core';
 import { MatieresComponent } from '../matieres/matieres.component';
+import { ListMatiereComponent } from './list-matiere/list-matiere.component';
+import { FormMatiereComponent } from './form-matiere/form-matiere.component';
 
 
 export const MATIERE_ROUTES: Routes = [
-  { path: 'list-matiere', component: MatieresComponent }, 
-  {path:"./", component:MatieresComponent},
+  {path:"liste-matieres",component:ListMatiereComponent},
+  {path:"form-matiere",component:FormMatiereComponent},
+  {path:"",component:MatieresComponent},
+
 ];
