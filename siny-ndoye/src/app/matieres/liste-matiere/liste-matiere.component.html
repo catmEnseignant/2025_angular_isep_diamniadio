@@ -6,11 +6,11 @@
             </div>
 
             <div class="col-4">
-                <h4>Nombre de matiere</h4>
+                <h4>Nombre de matiere {{coefficient}}</h4>
             </div>
 
             <div class="col-4">
-                <button class="btn btn-primary">Ajouter une matiere</button>
+                <button class="btn btn-primary"(click)="addMatiere()">Ajouter une matiere</button>
             </div>
         </div>
     </div>
@@ -26,23 +26,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>voiture</td>
+                <tr *ngFor= "let matiere of matieres">
+                    <th scope="row">{{matiere.code}}</th>
+                    <td>{{matiere.nom}}</td>
+                    <td>{{matiere.description}}</td>
+                    <td>{{matiere.Coefficient}}</td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>vieww</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>gddth</td>
-                </tr>
+                
             </tbody>
         </table>
 

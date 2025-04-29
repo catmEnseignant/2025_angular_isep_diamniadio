@@ -2,53 +2,41 @@
     <div class="card-header">
         <div class="row">
             <div class="col-4">
-                <h4>Liste des matieres</h4>
+                <h4>Formulaire matiere</h4>
             </div>
-
             <div class="col-4">
-                <h4>Nombre de matiere</h4>
-            </div>
-
-            <div class="col-4">
-                <button class="btn btn-primary">Ajouter une matiere</button>
+                <h4>Nombre de matieres</h4>
             </div>
         </div>
     </div>
     <div class="card-body">
+        <div class="container">
+            <form [formGroup]="matiereform" (ngSubmit)="storeMatiere()">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="nom" class="form-label">Code</label>
+                        <input type="nom" class="form-control" formControlName="code" id="code">
+                    </div>
+                    <div class="col-6">
+                        <label for="niveau" class="form-label">Nom</label>
+                        <input type="niveau" class="form-control"  formControlName="nom" id="nom">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="serie" class="form-label">Description</label>
+                        <input type="serie" class="form-control" formControlName="description" id="description">
+                    </div>
+                    <div class="col-6">
+                        <label for="nombres_eleve"class="form-label">Coefficient</label>
+                        <input type="nombres_eleve" class="form-control" formControlName="coefficient" id="coefficient">
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Code</th>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Coefficient</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>voiture</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>vieww</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>gddth</td>
-                </tr>
-            </tbody>
-        </table>
-
+        </div>
     </div>
-   
-
 </div>
-
-

@@ -6,7 +6,7 @@
             </div>
 
             <div class="col-4">
-                <h4>Nombre de classe</h4>
+                <h4>Nombre de classes {{nombres_eleve}}</h4>
             </div>
 
             <div class="col-4">
@@ -19,30 +19,20 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Code</th>
                     <th scope="col">Nom</th>
                     <th scope="col">Niveau</th>
-                    <th scope="col">Nombre d'éléves</th>
+                    <th scope="col">Serie</th>
+                    <th scope="col">Nombre d'élèves</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>voiture</td>
+                <tr *ngFor= "let classe of classes">
+                    <th scope="row">{{classe.nom}}</th>
+                    <td>{{classe.niveau}}</td>
+                    <td>{{classe.serie}}</td>
+                    <td>{{classe.nombres_eleve}}</td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>vieww</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>gddth</td>
-                </tr>
+                
             </tbody>
         </table>
 
