@@ -1,0 +1,43 @@
+<p>form-matiere works!</p>
+<div class="card container-fluid">
+  <div class="card-header">
+      <div class="row">
+          <div class="col-4">
+              <h4>Formulaire d ajout de Matières</h4>
+          </div>
+          <div class="col-4">
+              <h4>Nombre de Matières</h4>
+          </div>
+      </div>
+  </div>
+  <div class="card-body">
+      <div class="container">
+          <form [formGroup]="matiereform"  (ngSubmit)="storeMatiere()">
+              <div class="row">
+                  <div class="col-6">
+                      <label for="code" class="form-label">CODE</label>
+                      <input type="code" class="form-control"formControlName="code" id="code">
+                  </div>
+                  <div class="col-6">
+                      <label for="nom" class="form-label">Nom</label>
+                      <input type="nom" class="form-control" formControlName="nom" id="nom">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-6">
+                      <label for="coéfficient" class="form-label">Coéfficient</label>
+                       <input type="coéfficient" class="form-control" formControlName="coéfficient" id="coéfficient">
+          </div>
+                  <div class="col-6">
+                      <label for="description"class="form-label">Description</label>
+                      <input type="description" class="form-control" formControlName="description" id="description">
+                  </div>
+              </div>
+              <div class="row">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+          </form>
+
+      </div>
+  </div>
+</div>

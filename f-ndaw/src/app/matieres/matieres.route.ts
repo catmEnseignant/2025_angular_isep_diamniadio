@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
-import { MatiereComponent } from '../matiere/matiere.component';
-import { HomeComponent } from '../home/home.component';
+
+import { ListeMatiereComponent } from './liste-matiere/liste-matiere.component';
+import { FormMatiereComponent } from './form-matiere/form-matiere.component';
 
 
 
@@ -9,9 +10,9 @@ import { HomeComponent } from '../home/home.component';
 
 
 export const Matiere_ROUTES: Routes = [
-  {path:"liste-matiere",component:MatiereComponent},
-
-  {path:"",component:HomeComponent},
+  {path:"liste-matiere",component:ListeMatiereComponent},
+ {path:"form-matiere",component:FormMatiereComponent},
+  {path:"",redirectTo:"/liste-matiere",pathMatch:"full"},
 
 
  ];

@@ -14,7 +14,9 @@ export const App_Routes: Routes = [
    },
 
 
- {path:"",component:HomeComponent},
+ {path:"home",component:HomeComponent},
+
+{path:"",redirectTo:"/home",pathMatch:"full"}
 
 
 ];

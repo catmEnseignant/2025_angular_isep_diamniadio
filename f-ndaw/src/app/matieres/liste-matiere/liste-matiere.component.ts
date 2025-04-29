@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-liste-matiere',
@@ -7,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './liste-matiere.component.css'
 })
 export class ListeMatiereComponent {
-
+     constructor(private route :Router){
+     console.log("constructeur")
+  }
+  addMatiere(){
+    this.route.navigate(["matieres/form-matiere"]);
+  }
 }
