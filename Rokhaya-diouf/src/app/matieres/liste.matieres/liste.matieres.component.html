@@ -1,50 +1,36 @@
 <div class="card container-fluid">
+  <div class="card-header">
+      <div class="row">
+          <div class="col-4">
+              <h4>liste des matiere</h4>
+          </div>
+          <div class="col-4">
+              <h4>Nombre de matiere {{matieres.length}}</h4>
+          </div>
+          <div class="col-4">
+              <button class="btn btn-outline-success" (click)="addClasse()" >Ajouter une classe</button>
+          </div>
+      </div>
+  </div>
 
-    <div class="card-header">
-        <div class="row">
-            <div class="col-4">
-                <h4>liste des matiere</h4>
-            </div>
-            <div class="col-4">
-                <h4>Nombre des matiere</h4>
-            </div>
-            <div class="col-4">
-                <button class="btn btn-outline-success" (click)="addClasse()" >Ajouter une matiere</button>
-            </div>
-        </div>
-    </div>
- 
 <div class="card-body">
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">code</th>
-            <th scope="col">Nom</th>
-            <th scope="col">Niveau</th>
-            <th scope="col">Nombre d'eleve</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>John</td>
-            <td>Doe</td>
-            <td>social</td>
-          </tr>
-        </tbody>
-      </table>
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">code</th>
+          <th scope="col">Nom</th>
+          <th scope="col">Niveau</th>
+          <th scope="col">Nombre d'eleve</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let matiere of matieres">
+          <th scope="row">{{matiere.nom}}</th>
+          <td>{{matiere.niveau}}</td>
+          <td>{{matiere.serie}}</td>
+          <td>{{matiere.nombres_eleve}}</td>
+        </tr>
+      </tbody>
+    </table>
 </div>
-
 </div>
