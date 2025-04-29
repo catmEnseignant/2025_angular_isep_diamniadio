@@ -17,8 +17,8 @@ export const App_ROUTES: Routes = [
     },
 
 
-   
-    {path:"",component:HomeComponent},
+    {path:"",redirectTo:"/home",pathMatch:"full"},
+
 
 
     

@@ -15,7 +15,7 @@ export class ListClasseComponent {
 
   addClasse(){
     this.route.navigate(["classes/form-classe"]);
-    console.log("addClasse");
+   
   }
 
   
