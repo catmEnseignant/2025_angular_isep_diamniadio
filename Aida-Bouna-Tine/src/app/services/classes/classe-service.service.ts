@@ -1,0 +1,28 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ClasseServiceService {
+
+  constructor() { }
+  getClasse(){
+     let classes =[
+      {
+       'Nom':'l2' ,
+        'niveau':'premiere' ,
+        'serie':'s2',
+        'nombres_eleve':'45'
+      }
+      ,
+
+      {
+        'Nom':'lb' ,
+         'niveau':'terminal' ,
+         'serie':'s2',
+         'nombres_eleve':'43'
+       }
+        ]
+    return classes
+  }
+}

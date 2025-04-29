@@ -2,7 +2,7 @@
     <div class="card-header">
         <div class="row">
             <div class="col-4">
-                <h4>list des matiere</h4>
+                <h4>Nombre de matiere{{nbrClasse}}</h4>
             </div>
             <div class="col-4">
                 <h4>Nombre de matiere</h4>
@@ -25,24 +25,13 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>mdo</td>
+              <tr *ngFor="let matiere of matieres">
+                <th scope="row">{{matiere.Nom}}</th>
+                <td>{{matiere.niveau}}</td>
+                <td>{{matiere.serie}}</td>
+                <td>{{matiere.nombres_eleve}}</td>
               </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>John</td>
-                <td>Doe</td>
-                <td>social</td>
-              </tr>
+              
             </tbody>
           </table>
    
