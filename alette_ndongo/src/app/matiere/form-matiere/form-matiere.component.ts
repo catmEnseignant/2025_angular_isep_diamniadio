@@ -1,20 +1,19 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
-
 @Component({
-  selector: 'app-form-classe',
+  selector: 'app-form-matiere',
   imports: [ReactiveFormsModule],
-  templateUrl: './form-classe.component.html',
-  styleUrl: './form-classe.component.css'
+  templateUrl: './form-matiere.component.html',
+  styleUrl: './form-matiere.component.css'
 })
-export class FormClasseComponent {
-  
-  classform:FormGroup 
+export class FormMatiereComponent {
+
+  matiereform:FormGroup
 
 
   constructor( private fb:FormBuilder){
-    this.classform = this.fb.group({
+    this.matiereform = this.fb.group({
       nom:[''],
       niveau:[''],
       serie:[''],
@@ -23,9 +22,8 @@ export class FormClasseComponent {
       
     })
   }
-  storeClasse(){
-    console.log(this.classform.value)
+  storeMatiere(){
+    console.log(this.matiereform.value)
   }
-
 
 }
