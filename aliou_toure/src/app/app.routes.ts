@@ -1,8 +1,9 @@
 import { Routes } from '@angular/router';
-import { ClasseComponent } from './classe/classe.component';
-import { MatiereComponent } from './matiere/matiere.component';
+
 import { HomeComponent } from './home/home.component';
-import { LessonComponent } from './lesson/lesson.component'; // 👈 Ajouté ici
+import { ListMatiereComponent } from './matieres/list-matiere/list-matiere.component';
+import { ListClasseComponent } from './classes/list-classe/list-classe.component';
+import { FormClasseComponent } from './classes/form-classe/form-classe.component';
 
 export const APP_ROUTES: Routes = [
   {
@@ -10,7 +11,9 @@ export const APP_ROUTES: Routes = [
     loadChildren: () =>
       import('./classes/classes.routes').then((m) => m.CLASSE_ROUTES)
   },
-  { path: 'matieres', component: MatiereComponent },
-  { path: 'lessons', component: LessonComponent }, // 👈 Ajouté ici
+  { path: 'matieres', component: ListMatiereComponent },
+  { path: 'classes', component: ListClasseComponent },
+  { path: 'classes/form-classe', component: FormClasseComponent },
+
   { path: '', component: HomeComponent },
 ];
