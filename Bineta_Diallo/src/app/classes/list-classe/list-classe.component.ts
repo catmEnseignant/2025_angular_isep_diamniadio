@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ClasseServiceService } from '../../services/classes/classe-service.service';
 
 
 @Component({
@@ -11,8 +12,8 @@ import { Router } from '@angular/router';
 export class ListClasseComponent {
   title:string=""
 
-  constructor(private route:Router){
-    console.log("constructeur")
+  constructor(private route:Router,private classeService: ClasseServiceService){
+    console.log("Bineta Diallo")
   }
 
 
@@ -21,6 +22,10 @@ export class ListClasseComponent {
    return this.route.navigate(["/classes/form-classe"])
 
   }
+  getClasse(){
+    
+  }
+
 
 
 
