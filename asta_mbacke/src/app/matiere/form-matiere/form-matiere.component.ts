@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
   templateUrl: './form-matiere.component.html',
   styleUrl: './form-matiere.component.css'
 })
-export class FormMatiereComponent {
+export class FormMatiereComponent  {
 
   classform:FormGroup
   constructor( private fb:FormBuilder){
@@ -19,7 +19,7 @@ export class FormMatiereComponent {
     })
   }
 
-  storeClasse(){
+  storeMatiere(){
     console.log(this.classform.value)
   }
 
