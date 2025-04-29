@@ -1,23 +1,40 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ClasseServiceService } from '../../services/classes/classe-service.service';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-liste-classe',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './liste-classe.component.html',
   styleUrl: './liste-classe.component.css'
 })
-export class ListeClasseComponent {
+export class ListeClasseComponent implements OnInit{
+   classes:any
+   nombres_eleve:number = 0
 
 
-constructor(private route:Router){
-  console.log("constructeurr")
-}
+  constructor(private route:Router,private classeService: ClasseServiceService){
+    console.log("constructeurr")
+  }
+  ngOnInit(){
+    this.classes= this.classeService.getClasse()
+    this. nombres_eleve = this.classes.length
+    console.log(this.nombres_eleve)
+   
+
+   
+    
+  }
 
   addClasse(){
+    console.log("add initialiser")
+    
     return this.route.navigate(["/classes/form-classe"])
    
   }
+
+ 
 
 }

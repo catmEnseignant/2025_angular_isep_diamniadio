@@ -6,7 +6,7 @@
             </div>
 
             <div class="col-4">
-                <h4>Nombre de classe</h4>
+                <h4>Nombre de classe {{nombres_eleve}}</h4>
             </div>
 
             <div class="col-4">
@@ -29,25 +29,15 @@
             <th scope="col">Nombre d'éléve</th>
           </tr>
         </thead>
-        <tbody class="table-group-divider">
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>mdo</td>
+        <tbody >
+          <tr *ngFor= "let classe of classes"> 
+            <th scope="row"> {{classe.nom}}</th>
+            <th>{{classe.nombres_eleve}}</th>
+            <th> {{classe.serie}}</th>
+            <th> {{classe.niveau}}</th>
+           
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>John</td>
-            <td>Doe</td>
-            <td>social</td>
-          </tr>
+         
         </tbody>
       </table>
    

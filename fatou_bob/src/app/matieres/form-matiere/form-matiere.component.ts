@@ -10,6 +10,7 @@ import {  FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './form-matiere.component.css'
 })
 export class FormMatiereComponent {
+  
   matiereform:FormGroup
   
 
@@ -22,7 +23,7 @@ export class FormMatiereComponent {
     })
     
   }
-  storeClasse(){
+  storeMatiere(){
     console.log(this.matiereform.value)
   }
 
