@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import {FormBuilder,FormGroup, ReactiveFormsModule} from '@angular/forms'
+
 @Component({
   selector: 'app-form-class',
   imports: [CommonModule,ReactiveFormsModule],
@@ -14,6 +15,7 @@ export class FormClassComponent {
       nbreClass:[''],
       serie:[''],
       niveau:[''],
+
     })
   }
 
