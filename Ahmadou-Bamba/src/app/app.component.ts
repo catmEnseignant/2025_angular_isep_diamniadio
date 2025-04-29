@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { ClasseComponent } from './classe/classe.component';
-import { MatiereComponent } from './matiere/matiere.component';
 import { NavbarComponent } from "./shared/navbar/navbar.component";
 import { FooterComponent } from './footer/footer.component';
 
@@ -12,5 +10,5 @@ import { FooterComponent } from './footer/footer.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Amy-Faye';
+  title = 'Ahmadou-Bamba';
 }
