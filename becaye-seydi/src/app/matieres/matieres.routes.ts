@@ -10,7 +10,6 @@ export const MATIERES_ROUTES : Routes = [
     {path:"liste-matiere",component:ListClasseComponent},
     {path:"form-matiere",component:FormClasseComponent},
     {path:"",redirectTo:"/liste-matiere",pathMatch:"full"}
-    
 
 
 ];
