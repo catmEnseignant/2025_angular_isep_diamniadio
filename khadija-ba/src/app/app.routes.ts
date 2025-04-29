@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 export const APP_ROUTES: Routes = [
@@ -8,11 +7,11 @@ export const APP_ROUTES: Routes = [
 },
 
   { path:"matieres",
-        loadChildren:()=> import("./matieres/matiere.routes").then((m) => m.MATIERES_ROUTES)
-    
+    loadChildren:()=> import("./matieres/matiere.routes").then((m) => m.MATIERES_ROUTES)
 
 },
+  {path:"home",component:HomeComponent},
 
-{path:"",component:HomeComponent},
+  { path:"",redirectTo:"/home",pathMatch:"full"},
 ];
 

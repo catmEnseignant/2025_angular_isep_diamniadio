@@ -19,5 +19,5 @@ describe('ListeMatiereComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
+ });
 });
