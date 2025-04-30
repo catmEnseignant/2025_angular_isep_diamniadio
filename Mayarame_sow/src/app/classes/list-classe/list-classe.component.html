@@ -5,7 +5,7 @@
             <h4>Liste des classes</h4>
           </div>
           <div class="col-4">
-            <h4>Nombre de classes</h4>
+            <h4>Nombre de classes {{nombre}}</h4>
           </div>
           <div class="col-4">
               <button class="btn btn-primary" (click)="addclasse()">Ajouter une classe</button>
@@ -23,24 +23,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>mdo</td>
+        <tr *ngFor="let classe of classes">
+          <td>{{classe.code}}</td>
+          <td>{{classe.nom}}</td>
+          <td>{{classe.niveau}}</td>
+          <td>{{classe.nombre_eleve}}</td>
+
         </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>John</td>
-          <td>Doe</td>
-          <td>social</td>
-        </tr>
+
       </tbody>
     </table>
   </div>

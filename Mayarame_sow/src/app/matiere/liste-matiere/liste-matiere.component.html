@@ -5,10 +5,10 @@
             <h4>Liste des Matières</h4>
           </div>
           <div class="col-4">
-            <h4>Nombre de Matières</h4>
+            <h4>Nombre de Matières {{nombre}}</h4>
           </div>
           <div class="col-4">
-              <button class="btn btn-primary">Ajouter une Matières</button>
+              <button class="btn btn-primary" (click)="addmatiere()">Ajouter une Matières</button>
           </div>
       </div>
   </div>
@@ -23,24 +23,13 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>John</td>
-          <td>Doe</td>
-          <td>social</td>
-        </tr>
+        <tr *ngFor="let matiere of matiere">
+          <td>{{matiere.code}}</td>
+          <td>{{matiere.nom}}</td>
+          <td>{{matiere.description}}</td>
+          <td>{{matiere.Coefficient}}</td>
+       </tr>
+
       </tbody>
     </table>
   </div>
