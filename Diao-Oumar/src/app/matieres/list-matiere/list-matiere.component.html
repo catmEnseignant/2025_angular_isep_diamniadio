@@ -1,11 +1,11 @@
 <div class="container-fluid mt-4">
-    <div class="card-header">
+    <div class="card-header text-center bg-light py-2 shadow-sm rounded-2">
         <div class="row">
             <div class="col-4">
-                <h4 class="border-start border-2 ps-1"><b>Liste des matieres</b></h4>
+                <h4 class="text-primary fw-bold"><b>Liste des matieres</b></h4>
             </div>
             <div class="col-4">
-                <h4 class="border-start border-2 ps-1"><b>Nombre de matiere</b></h4>
+                <h4 class="text-primary fw-bold"><b>Nombre de matiere ({{ matieres.length }})</b></h4>
             </div>
             <div class="col-4">
                 <a class="btn btn-primary" (click)="addMatieres()"><b>Ajouter une matiere</b></a>
@@ -13,33 +13,21 @@
         </div>
     </div>
     <div class="card-body container my-2">
-        <table class="table table-light  table-striped table-borderless">
-            <thead class="table-dark">
+        <table class="table table-light table-hover table-sm">
+            <thead class="table-light">
               <tr class="text-center">
                 <th>Code</th>
                 <th>Nom</th>
-                <th>Niveau</th>
-                <th>Nombre d'élèves</th>
+                <th>Coefficient</th>
+                <th>Enseignant</th>
               </tr>
             </thead>
             <tbody>
-            <tr class="text-center">
-                <td>07</td>
-                <td>Oumar Diao</td>
-                <td>2</td>
-                <td>20</td>
-            </tr>
-            <tr class="text-center">
-                <td>07</td>
-                <td>Oumar Diao</td>
-                <td>2</td>
-                <td>20</td>
-            </tr>
-            <tr class="text-center">
-                <td>07</td>
-                <td>Oumar Diao</td>
-                <td>2</td>
-                <td>20</td>
+            <tr class="text-center" *ngFor="let item of matieres">
+                <td>{{ item.code }}</td>
+                <td>{{ item.nom }}</td>
+                <td>{{ item.coefficient }}</td>
+                <td>{{ item.enseignant }}</td>
             </tr>
             </tbody>
         </table>
