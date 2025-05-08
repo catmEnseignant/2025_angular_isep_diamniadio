@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatiereServiceService } from '../../services/matieres/matiere-service.service';
+import { HttpClient } from '@angular/common/http';
+import { subscribe } from 'diagnostics_channel';
 
 @Component({
   selector: 'app-liste-matiere',
@@ -22,9 +24,19 @@ export class ListeMatiereComponent implements OnInit {
 
   
   ngOnInit(){
-    this.matieres = this.matiereService.getClasse()
-    this.coefficient = this.matieres.length
-    console.log(this.coefficient)
+    this.matiereService.getClasses().subscribe(
+      (response) =>{
+        this.matieres = response
+        console.log(response)
+      },
+      (error) =>{
+        console.log(error)
+      },
+      
+    
+    )
+    //this.coefficient = this.matieres.length
+    //console.log(this.coefficient)
 
   }
 
