@@ -1,29 +1,17 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClasseServiceService {
+  constructor(private httpClient:HttpClient) { }
 
-  constructor() { }
+  host="http://localhost:3000/"
 
-  getClasse(){
-   let classes=[
-      {
-        'nom':'dbe',
-        'niveau':'3emesemestre',
-        'serie':'s2',
-        'nombres_eleve':33,
-      }
-      ,
-      {
-        'nom':'dfe',
-        'niveau':'3emesemestre',
-        'serie':'s2',
-        'nombres_eleve':26,
-      }
+  getClasses(){
 
-    ]
-    return classes;
+    return this.httpClient.get(this.host+ "/classes")
+//observable  reponse au niveau du serveur
   }
 }

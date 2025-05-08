@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatiereServiceService } from '../../services/matieres/matiere-service.service';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-liste.matieres',
-  imports: [CommonModule],
+  imports: [CommonModule ],
   templateUrl: './liste.matieres.component.html',
   styleUrl: './liste.matieres.component.css'
 })
@@ -20,11 +22,27 @@ export class ListeMatieresComponent {
   //   let result=3 * 3 +3
   //   console.log("le rresul est"+ result)
   // }
-  
+
+  // ngOnInit(){
+  //   // this.matieres=this.matiereService.getClasse()
+  //   // console.log(this.matieres.length)
+  // }
+
   ngOnInit(){
-    this.matieres=this.matiereService.getClasse()
-    console.log(this.matieres.length)
+    // this.classes=
+    this.matiereService.getMatieres().subscribe(
+      (response) => {
+        this.matieres=response
+    // console.log(response)
+    },
+    (error)=> {
+      console.log(error)
+      }
+  )
+    //subscrite fonction qui prend en parametre 2 fonction 
+    // console.log(this.classes.length)
   }
+
 
   addClasse(){
     console.log("add initialiser")

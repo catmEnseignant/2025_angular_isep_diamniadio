@@ -1,0 +1,50 @@
+{
+    "classes":[
+        {
+          "nom":"dbe",
+          "niveau":"3emesemestre",
+          "serie":"s2",
+          "nombres_eleve":"33"
+        },
+        {
+            "nom":"dbe",
+            "niveau":"3emesemestre",
+            "serie":"s2",
+            "nombres_eleve":"33"
+          },
+
+          {
+            "nom":"dfe",
+            "niveau":"3emesemestre",
+            "serie":"s2",
+            "nombres_eleve":"26"
+          }
+      ]
+      ,
+
+
+
+    "matieres":[
+        {
+          "nom":"dbe",
+          "niveau":"3emesemestre",
+          "serie":"s2",
+          "nombres_eleve":"33"
+        }
+        ,
+        {
+          "nom":"dfe",
+          "niveau":"'3emesemestre",
+          "serie":"s2",
+          "nombres_eleve":"26"
+        }
+        ,
+        {
+          "nom":"dfe",
+          "niveau":"'3emesemestre",
+          "serie":"s2",
+          "nombres_eleve":"26"
+        }
+  
+      ]
+}

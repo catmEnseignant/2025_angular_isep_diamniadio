@@ -7,6 +7,7 @@ import { FormBuilder ,FormGroup, ReactiveFormsModule} from '@angular/forms';
   templateUrl: './form.matieres.component.html',
   styleUrl: './form.matieres.component.css'
 })
+
 export class FormMatieresComponent {
   classform:FormGroup
 
@@ -19,6 +20,7 @@ export class FormMatieresComponent {
       nombres_eleve:[''],
     })
   }
+  
   storClass(){
     console.log(this.classform.value)
   }

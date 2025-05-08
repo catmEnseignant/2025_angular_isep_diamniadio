@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,26 +6,14 @@ import { Injectable } from '@angular/core';
 })
 export class MatiereServiceService {
 
-  constructor() { }
+  constructor(private httpClient:HttpClient) { }
 
-  getClasse(){
-   let matieres=[
-      {
-        'nom':'dbe',
-        'niveau':'3emesemestre',
-        'serie':'s2',
-        'nombres_eleve':33,
-      }
-      ,
-      {
-        'nom':'dfe',
-        'niveau':'3emesemestre',
-        'serie':'s2',
-        'nombres_eleve':26,
-      }
+  host="http://localhost:3000/"
 
-    ]
-    return matieres;
+  getMatieres(){
+
+    return this.httpClient.get(this.host+ "/matieres")
+//observable  reponse au niveau du serveur
   }
 
 }

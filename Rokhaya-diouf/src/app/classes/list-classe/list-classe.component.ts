@@ -24,15 +24,23 @@ export class ListClasseComponent implements OnInit {
   // }
   
   ngOnInit(){
-    this.classes=this.classeService.getClasse()
-    console.log(this.classes.length)
+    // this.classes=
+    this.classeService.getClasses().subscribe(
+      (response) => {
+        this.classes=response
+    // console.log(response)
+    },
+    (error)=> {
+      console.log(error)
+      }
+  )
+    //subscrite fonction qui prend en parametre 2 fonction 
+    // console.log(this.classes.length)
   }
 
   addClasse(){
     console.log("add initialiser")
     return this.route.navigate(["classes/form-classe"])
   }
-
-  
 
 }
