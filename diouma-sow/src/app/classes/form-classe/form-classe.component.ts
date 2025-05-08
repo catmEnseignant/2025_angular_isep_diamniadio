@@ -19,7 +19,7 @@ export class FormClasseComponent {
       nom:[''],
       niveau:[''],
       serie:[''],
-      nombre_eleves:[''],
+      nombres_eleve:[''],
 
       
     })

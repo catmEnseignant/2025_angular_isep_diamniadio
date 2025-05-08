@@ -5,7 +5,7 @@
               <h4>Liste des Matiere</h4>
             </div>
             <div class="col-4">
-              <h4>Nombre de Matiere</h4>
+              <h4>Nombre de matieres {{nombres_eleve}}</h4>
             </div>
             <div class="col-4">
                 <button class="btn btn-primary"(click)="addMatiere()">Ajouter une Matiere</button>
@@ -16,31 +16,20 @@
       <table class="table">
         <thead>
           <tr>
-            <th scope="col">Code</th>
             <th scope="col">Nom</th>
-            <th scope="col">Description</th>
-            <th scope="col">Coefficient</th>
+            <th scope="col">Niveau</th>
+            <th scope="col">Serie</th>
+            <th scope="col">Nombres_eleves</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>mdo</td>
+          <tr *ngFor= "let Matieres of matiere">
+            <th scope="row">{{Matieres.nom}}</th>
+            <td>{{Matieres.niveau}}</td>
+            <td>{{Matieres.serie}}</td>
+            <td>{{Matieres.nombres_eleve}}</td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>John</td>
-            <td>Doe</td>
-            <td>social</td>
-          </tr>
+          
         </tbody>
       </table>
     </div>

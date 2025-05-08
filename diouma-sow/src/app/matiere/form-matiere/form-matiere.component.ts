@@ -17,12 +17,12 @@ export class FormMatiereComponent {
       nom:[''],
       niveau:[''],
       serie:[''],
-      nombre_eleves:[''],
+      nombres_eleve:[''],
 
       
     })
   }
-  storeMatiere(){
+  storeMatieres(){
     console.log(this.matiereform.value)
   }
 

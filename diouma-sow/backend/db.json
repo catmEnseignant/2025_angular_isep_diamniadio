@@ -1,0 +1,39 @@
+{
+    "Classes" : [
+        {
+            "nom": "dfe",
+            "nbreClass": 23,
+            "serie": "s2",
+            "niveau": "second"
+        },
+
+        
+        
+        {"nom": "dfe",
+         "nbreClass": 23,
+         "serie": "s2",
+         "niveau": "second"
+            
+        } 
+    ],
+
+    "matieres": [
+
+    {  "nom": "math",
+        "description": "unified",
+        "coefficient": 6,
+        "nombre_de_jours": "3 jours"
+        
+    },
+
+    {
+        "nom": "math",
+        "description": "unified",
+        "coefficient": 6,
+        "nombre_de_jours": "3 jours"
+   }
+
+    ]
+
+
+}

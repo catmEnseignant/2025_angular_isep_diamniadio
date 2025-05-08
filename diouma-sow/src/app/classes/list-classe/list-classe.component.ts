@@ -1,21 +1,46 @@
-import { Component } from '@angular/core';
-import {  Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
+import { ClasseServiceService } from '../../services/classes/classe-service.service';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @Component({
   selector: 'app-list-classe',
-  imports: [],
+  imports: [CommonModule, HttpClientModule],
   templateUrl: './list-classe.component.html',
   styleUrl: './list-classe.component.css'
 })
-export class ListClasseComponent {
-a=3   
-  constructor( private route:Router){
-    console.log("constructeur")
+export class ListClasseComponent implements OnInit {
+
+ classes:any
+ nombres_eleve :number = 0
+
+  constructor(private route:Router,private classeService: ClasseServiceService){
+    console.log("constructor")
   }
+
+  ngOnInit(){
+    this.classes= this.classeService.getClasses().subscribe(
+    (response) => {
+      this.classes = response
+    },
+    (error) =>
+    console.log(error)
+
+  )
+    //this.nombres_eleve = this.classes.length//
+    //console.log(this.nombres_eleve)//
+  }
+  
+  
+
   addClasses(){
-    return this.route.navigate(["./classes/form-classes"])
+    console.log("add initialiser")
+    return this.route.navigate(["classes/form-classe"])
+  
+}
 
-  }
-   
 
-}  
+}
