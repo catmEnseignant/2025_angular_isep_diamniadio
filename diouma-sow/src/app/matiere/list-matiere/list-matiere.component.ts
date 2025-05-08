@@ -18,11 +18,17 @@ export class ListMatiereComponent {
     }
   
     ngOnInit(){
-      this.matiere= this.matieresService.getMatieres()
-      let test = this.matiere[0].niveau
-      console.log(this.matiere[0].niveau)
-      this.nombres_eleve = this.matiere.length
-      console.log(this.nombres_eleve)
+      this.matiere= this.matieresService.getMatieres().subscribe(
+        (response) => {
+          this.matiere = response
+        },
+        (error) =>
+        console.log(error)
+      )
+    
+    
+      //this.nombres_eleve = this.matiere.length
+      //console.log(this.nombres_eleve)
     }
   
     addMatiere(){
