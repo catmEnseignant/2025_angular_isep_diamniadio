@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ClasseServiceService } from '../../services/classes/classe-service.service';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+import { error } from 'console';
 
 
 @Component({
@@ -18,7 +20,14 @@ export class ListClasseComponent implements OnInit{
   }
   
   ngOnInit() {
-    this.classes = this.classeService.getClasse()
+   this.classeService.getClasses().subscribe(
+    (response) =>  {
+      this.classes = response
+    },
+    (error) =>  {
+      console.log(error)
+    }
+  )
     // this.nombreClasse(this.classes.length)
     // console.log(this.nombreClasse)
   
