@@ -1,0 +1,31 @@
+{
+    "classes": [ 
+        {"nom":"second-la",
+          "nombres_eleve":23,
+          "serie":"dfe",
+          "niveau":"terminal"
+        }
+        ,
+        {"nom":"second-la",
+          "nombres_eleve":83,
+        "serie":"s5",
+          "niveau":"second"
+        }
+      ],
+
+
+      "matieres":[ 
+        {"nom":"second-la",
+          "nombres_eleve":23,
+          "serie":"dfe",
+          "niveau":"terminal"
+        }
+        ,
+        {"nom":"second-lA",
+          "nombres_eleve":83,
+          "serie":"s5",
+          "niveau":"second"
+        }
+      ]
+}
+
