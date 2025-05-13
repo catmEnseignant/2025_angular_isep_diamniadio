@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,29 +6,13 @@ import { Injectable } from '@angular/core';
 })
 export class ClasseServiceService {
 
-  constructor() { }
+  host="http://localhost:3000/"
 
-  getClasse(){
+  constructor(private httpClient:HttpClient) { }
 
-    let classes = [ 
-      { 'nom':'second-1b',
-        'niveau': 'second',
-        'serie':'S2',
-        'nombres_eleve':35
-       
-        
-      },
-      
-      { 'nom':'second-1b',
-        'niveau': 'second',
-        'serie':'S1',
-        'nombres_eleve':100
-       
-        
-      },
-
-    ]
-    return classes;
+  getClasses(){
+   
+    return this.httpClient.get(this.host+"/classes")
 
   }
 }

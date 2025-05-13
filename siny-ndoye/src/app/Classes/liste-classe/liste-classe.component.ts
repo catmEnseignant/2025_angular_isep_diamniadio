@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { ClasseServiceService } from '../../services/classses/classe-service.service';
 import { CommonModule } from '@angular/common';
+import { HttpClient,  } from '@angular/common/http';
 
 
 
 @Component({
   selector: 'app-liste-classe',
-  imports: [CommonModule],
+  imports: [CommonModule, ],
   templateUrl: './liste-classe.component.html',
   styleUrl: './liste-classe.component.css'
 })
@@ -21,9 +22,17 @@ export class ListeClasseComponent implements OnInit {
   }
 
   ngOnInit(){
-    this.classes= this.classeService.getClasse()
-    this.nombres_eleve = this.classes.length
-    console.log(this.nombres_eleve)
+    this.classeService.getClasses().subscribe(
+      (response) => {
+        this.classes = response
+        console.log(response)
+      },
+      (error)=> {
+        console.log(error)
+      }
+    )
+    //this.nombres_eleve = this.classes.length
+    //console.log(this.nombres_eleve)
   }
 
   addClasse(){

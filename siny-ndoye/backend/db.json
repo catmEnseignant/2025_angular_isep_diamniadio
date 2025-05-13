@@ -1,0 +1,36 @@
+{
+    "classes":[
+      { "nom":"second-1b",
+        "niveau": "second",
+        "serie":"S2",
+        "nombres_eleve":35
+       
+      },
+      
+      { "nom":"second-1b",
+        "niveau": "second",
+        "serie":"S1",
+        "nombres_eleve":100
+       
+        
+      }
+    ],
+
+    "matieres":[
+        { "code":"DFE",
+        "nom": "infomatique",
+        "description":"frond-End",
+        "coefficient":35
+       
+        
+      },
+      
+      {" code":"DBE",
+        "nom": "informatiqu",
+        "description":"back-End",
+        "coefficient":100
+       
+        
+      } 
+    ]
+}

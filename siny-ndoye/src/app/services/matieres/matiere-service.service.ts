@@ -1,33 +1,17 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MatiereServiceService {
+  host="http://localhost:3000/"
 
-  constructor() { }
+  constructor(private httpClient:HttpClient) { }
 
-  getMatiere(){
+  getMatieres(){
 
-    let matieres = [ 
-      { 'code':'DFE',
-        'nom': 'infomatique',
-        'description':'frond-End',
-        'coefficient':35
-       
-        
-      },
-      
-      { 'code':'DBE',
-        'nom': 'informatique',
-        'description':'back-End',
-        'coefficient':100
-       
-        
-      },
-
-    ]
-    return matieres;
+    return  this.httpClient.get(this.host+"/matieres");
 
   }
 }
