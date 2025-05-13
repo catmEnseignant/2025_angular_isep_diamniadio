@@ -16,9 +16,17 @@ export class ListMatiereComponent implements OnInit{
     console.log("constructeur")
   }
   ngOnInit () {
-    this.matieres = this.matiereServices.getMatieres();
-    console.log("Hello");
+    this.matiereServices.getMatieres().subscribe({
+      next : (reponse) : void => {
+        this.matieres = reponse
+        console.log(reponse)
+      },
+      error : (error:any) : void => {
+        console.log(error);
+      }
+    });
   }
+
   public addMatieres () {
     this.route.navigate(["matieres/form-matiere"]);
     console.log("this.addMatieres")

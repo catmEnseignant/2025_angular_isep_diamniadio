@@ -1,0 +1,19 @@
+{
+    "classes" : [
+      { "id" : "1", "nom" : "Second", "niveau" : 10, "serie" : "L2", "nombre" : 45 },
+      { "id" : "2", "nom" : "Primiere", "niveau" : 20, "serie" : "S1", "nombre" : 25 },
+      { "id" : "3", "nom" : "Terminal", "niveau" : 15, "serie" : "L2", "nombre" : 35 }
+    ],
+    
+    "matieres" : [
+      { "code" : "MAT101", "nom" : "Mathématiques", "coefficient" : "4", "enseignant" : "M. Dupont" },
+      { "code" : "HIS202", "nom" : "Histoire-Géographie", "coefficient" : "4", "enseignant" : "Mme Martin" },
+      { "code" : "JAVA101", "nom" : "Programmation Java", "coefficient" : "5", "enseignant" : "M. Sidybé" }
+    ],
+
+    "users" : [
+      {"id" : "1", "nom" : "Oumar Daio", "email" : "oumardiao21@gmail.com", "motDePasse" : "oumardiao21@", "confirmMotDePasse" : "oumardiao21@"},
+      {"id" : "2", "nom" : "Astou Daio", "email" : "astoudiao21@gmail.com", "motDePasse" : "astoudiao21@", "confirmMotDePasse" : "astoudiao21@"},
+      {"id" : "3", "nom" : "Lima Daio", "email" : "limadiao21@gmail.com", "motDePasse" : "limadiao15@", "confirmMotDePasse" : "limadiao15@"}
+    ]
+}

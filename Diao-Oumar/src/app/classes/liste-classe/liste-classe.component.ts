@@ -11,14 +11,19 @@ import { CommonModule } from '@angular/common';
 })
 export class ListeClasseComponent implements OnInit{
   classes : any;
-  nbreClasse : number = 0;
   constructor (private route:Router, private classeServices:ClassesServicesService) {
     console.log("constructeur")
   }
   ngOnInit(){
-    this.classes = this.classeServices.getClasses();
-    // console.log(this.classes.length);
-    this.nbreClasse = this.classes.length;
+    this.classeServices.getClasses().subscribe(
+      (reponse) : void => {
+        this.classes = reponse
+        console.log(reponse)
+      },
+      (error) : void => {
+        console.log(error);
+      }
+    );
   }
   
   public addClasse () {
