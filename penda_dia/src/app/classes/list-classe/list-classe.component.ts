@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ClasseServiseService } from '../../services/classes/classes-service.service';
+import { ClasseServiseService } from '../../services/classes/classes-servise.service';
+
 
 @Component({
   selector: 'app-list-classe',
@@ -10,7 +11,7 @@ import { ClasseServiseService } from '../../services/classes/classes-service.ser
   styleUrl: './list-classe.component.css'
 })
 export class ListClasseComponent  implements OnInit{
-  classes: any[] = [];
+  classes: any;
   
   
   constructor( private route: Router, private classeService: ClasseServiseService) {
@@ -19,15 +20,18 @@ export class ListClasseComponent  implements OnInit{
 
   
   ngOnInit(){
-    this.classes = this.classeService.getClass()
-    // console.log(this.classes.length)
+    this.classeService.getClass().subscribe(
+      (response) => {
+        this.classes = response
+    },
+    (error) => {
+      console.log(error)
+    }
+    )
   }
   
   
   addClasse(){
     return this.route.navigate(["classes/form-classe"]);
-   
   }
-
-  
 }

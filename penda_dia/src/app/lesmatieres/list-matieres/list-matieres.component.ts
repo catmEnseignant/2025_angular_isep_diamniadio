@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { MatieresServiceService } from '../../services/matieres/matieres-service.service';
+import { MatieresServiceService } from '../../services/matieres/matieres-servise.service';
 @Component({
   selector: 'app-list-matieres',
   imports: [CommonModule],
@@ -9,15 +9,21 @@ import { MatieresServiceService } from '../../services/matieres/matieres-service
   styleUrl: './list-matieres.component.css'
 })
 export class ListMatieresComponent {
-  matieres: any = [];
+  matieres: any;
  constructor( private route: Router, private matiereService: MatieresServiceService) {
     console.log('constructeur');
   }
   
   
-  ngOnInit(){
-    this.matieres = this.matiereService.getClass()
-    // console.log(this.matiere.length)
+   ngOnInit(){
+    this.matiereService.getMatieres().subscribe(
+      (response) => {
+        this.matieres = response
+    },
+    (error) => {
+      console.log(error)
+    }
+    )
   }
   addMatiere(){
     return this.route.navigate(["lesmatieres/form-matieres"]);
