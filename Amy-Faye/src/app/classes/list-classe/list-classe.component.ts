@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ClasseServiceService } from '../../services/classes/classe-service.service';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-list-classe',
@@ -18,9 +19,18 @@ export class ListClasseComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.classes = this.classeService.getClasse()
-    this.nbreClass = this.classes.length
-    console.log(this.nbreClass) 
+    this.classeService.getClasse().subscribe(
+      (response) =>{
+        this.classes = response
+
+      },
+
+      (error)=> {
+        console.log(error)
+      }
+  )
+    //this.nbreClass = this.classes.length
+    //console.log(this.nbreClass)
   }
 
   addClasse(){
@@ -29,9 +39,8 @@ export class ListClasseComponent implements OnInit {
     //console.log("addClasse")
   }
 
-  
 
- 
+
 
 
 

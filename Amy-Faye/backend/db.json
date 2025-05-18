@@ -1,0 +1,69 @@
+{
+  "classes":  [
+    { "nom":"second-l2",
+      "nbreClass":23,
+      "serie": "l2",
+      "niveau": "seconde"
+
+    },
+
+
+
+    { "nom":"second-s1",
+      "nbreClass":36,
+      "serie": "s1",
+      "niveau": "premier"
+    }
+    ,
+
+    { "nom":"second-l2",
+      "nbreClass":43,
+      "serie": "l2",
+      "niveau": "troisieme"
+
+    }
+    ,
+
+
+
+    { "nom":"second-s1",
+      "nbreClass":50,
+      "serie": "s1",
+      "niveau": "terminal"
+    }
+  ]
+  ,
+
+
+
+  "matieres":  [
+    { "nom":"second-l2",
+      "nbreMatiere":15,
+      "serie": "l2",
+      "niveau": "seconde"
+
+    }
+    ,
+
+
+    { "nom":"second-s1",
+      "nbreMatiere":20,
+      "serie": "s1",
+      "niveau": "seconde"
+    }
+    ,
+
+    { "nom":"premier-s1",
+      "nbreMatiere":22,
+      "serie": "s1",
+      "niveau": "premier"
+    }
+    ,
+
+    { "nom":"premier-s2",
+      "nbreMatiere":18,
+      "serie": "s2",
+      "niveau": "premier"
+    }
+  ]
+}

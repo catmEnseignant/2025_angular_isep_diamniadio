@@ -1,16 +1,26 @@
 import { Injectable } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
 export class MatiereServiceService {
+   host="http://localhost:3000"
 
-  constructor() { }
+    constructor(private httpClient:HttpClient) { }
+
+    getClasse(){
+      return  this.httpClient.get(this.host +"/classes")
+
+
+
+    }
+
+  /*constructor(private httpClient:HttpClient) { }
 
   getClasse(){
     let classes =  [
       { 'nom':'second-l2',
-        'nbreClass':23,
+        'nbreMatiere':15,
         'serie': 'l2',
         'niveau': 'seconde'
 
@@ -19,12 +29,26 @@ export class MatiereServiceService {
 
 
       { 'nom':'second-s1',
-        'nbreClass':36,
+        'nbreMatiere':20,
+        'serie': 's1',
+        'niveau': 'seconde'
+      }
+      ,
+
+      { 'nom':'premier-s1',
+        'nbreMatiere':22,
         'serie': 's1',
         'niveau': 'premier'
       }
-    ]
-    return classes
+      ,
 
-  }
+      { 'nom':'premier-s2',
+        'nbreMatiere':18,
+        'serie': 's2',
+        'niveau': 'premier'
+      }
+    ]
+    return this.httpClient.get(this.host +"/matieres"
+
+  }*/
 }
