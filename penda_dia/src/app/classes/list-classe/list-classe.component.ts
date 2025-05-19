@@ -29,8 +29,7 @@ export class ListClasseComponent  implements OnInit{
     }
     )
   }
-  
-  
+   
   addClasse(){
     return this.route.navigate(["classes/form-classe"]);
   }

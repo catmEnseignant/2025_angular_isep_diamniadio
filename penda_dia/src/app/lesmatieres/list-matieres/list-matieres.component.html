@@ -9,7 +9,7 @@
             </div>
 
             <div class="col-4">
-                <h4>Nombre de matières : {{matieres?.length}}</h4>
+                <h4 *ngIf="matieres">Nombre de matières : {{matieres.length}}</h4>
             </div>
 
             <div class="col-4">
@@ -18,7 +18,7 @@
         </div>
     </div>
 <div class="card-body">
-<table class="table">
+<table class="table" *ngIf="matieres && matieres.length > 0">
     <thead>
       <tr>
         <th scope="col">Code</th>
@@ -36,5 +36,11 @@
     </tr>
     </tbody>
   </table>
+     <!-- message si n'ya aucun classe -->
+   <p *ngIf="matieres && matieres.length === 0 ">
+    Aucune classe trouvée pour le moment.
+   </p>
+   <!-- Affichage json pour debug (optionnel) -->
+    <!-- <pre>{{ classes | json </pre>}} -->
   </div>
 </div>
