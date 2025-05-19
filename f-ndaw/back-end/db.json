@@ -1,0 +1,21 @@
+{
+  "classes":[
+    {
+          "nom":"dfe",
+          "nombre_eleves":45,
+          "serie":"L2",
+          "niveau":"bac"
+
+
+    },
+    {
+
+          " nom":"B",
+            "nombre_eleves":55,
+            "serie":"L3",
+           " niveau":"second"
+
+    }
+
+  ]
+}

@@ -1,10 +1,11 @@
 
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder,FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-form-classe',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,CommonModule],
   templateUrl: './form-classe.component.html',
   styleUrl: './form-classe.component.css'
 })
@@ -16,7 +17,7 @@ export class FormClasseComponent {
         nom:[''],
         niveau:[''],
         serie:[''],
-        nombre_eleve:[''],
+        nombre_eleves:[''],
        })
     }
 
