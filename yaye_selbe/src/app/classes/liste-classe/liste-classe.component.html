@@ -1,60 +1,48 @@
 <div class="card container-fluid">
-    <div class="card-header">
-        <div class="row">
-            <div class="col-4">
-                <h4>Liste des classes</h4>
-            </div>
+  <div class="card-header">
+    <div class="row">
+      <div class="col-4">
+        <h4>Liste des classes</h4>
+      </div>
 
-            <div class="col-4">
-                <h4>Nombre de classe</h4>
-            </div>
+      <div class="col-4">
+        <!-- Protégé avec *ngIf pour éviter erreur si classes undefined -->
+        <h4 *ngIf="classes">Nombre de classes {{ classes.length }}</h4>
+      </div>
 
-            <div class="col-4">
-                <button class="btn btn-primary" (click)="addClasse()">Ajouter une classe</button>
-            </div>
-        </div>
+      <div class="col-4">
+        <button class="btn btn-primary" (click)="addClasse()">Ajouter une classe</button>
+      </div>
     </div>
-    <div class="card-body">
+  </div>
 
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Code</th>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Niveau</th>
-                    <th scope="col">Nombre d'éléves</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Dfe</td>
-                    <td>L2</td>
-                    <td>36</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Dbe</td>
-                    <td>L2</td>
-                    <td>40</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Apd</td>
-                    <td>L2</td>
-                    <td>47</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Abd</td>
-                    <td>L2</td>
-                    <td>50</td>
-                </tr>
-            </tbody>
-        </table>
+  <div class="card-body">
+    <table class="table" *ngIf="classes && classes.length > 0">
+      <thead>
+        <tr>
+          <th scope="col">Nom</th>
+          <th scope="col">Niveau</th>
+          <th scope="col">Serie</th>
+          <th scope="col">Nombre d'eleves</th>
+        </tr>
+      </thead>
 
-    </div>
+      <tbody>
+        <tr *ngFor="let classe of classes">
+          <th scope="row">{{ classe.nom }}</th>
+          <td>{{ classe.niveau }}</td>
+          <td>{{ classe.serie }}</td>
+          <td>{{ classe.nombre_eleve }}</td>
+        </tr>
+      </tbody>
+    </table>
 
+    <!-- Message si aucune classe -->
+    <p *ngIf="classes && classes.length === 0" class="text-center text-muted">
+      Aucune classe trouvée pour le moment.
+    </p>
+
+    <!-- Affichage JSON pour debug (optionnel) -->
+    <!-- <pre>{{ classes | json }}</pre> -->
+  </div>
 </div>
-
-
