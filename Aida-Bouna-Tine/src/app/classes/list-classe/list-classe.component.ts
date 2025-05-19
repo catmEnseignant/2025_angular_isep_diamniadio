@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { ClasseServiceService } from '../../services/classes/classe-service.service';
 import { CommonModule } from '@angular/common';
 
+
+
 @Component({
   selector: 'app-list-classe',
   imports: [CommonModule],
@@ -17,9 +19,18 @@ export class ListClasseComponent implements OnInit {
     console.log("Bouna fall")
   }
   ngOnInit(){
-    this.classes= this.classeService.getClasse()
-    this.nbrClasse=this.classes.length
-    console.log(this.nbrClasse)
+    this.classeService.getClasses().subscribe(
+      (response)=>{
+        this.classes=response
+        // console.log(response)
+      },
+      (error)=>{
+        console.log(error)
+      }
+  )
+    // this.classes= this.classeService.getClasses()
+    //this.nbrClasse=this.classes.length
+    //console.log(this.nbrClasse)
     // console.log(this.classes)
     // console.log("composants initialiser")
     // let result=3*3+3

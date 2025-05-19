@@ -1,29 +1,35 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MatiereServiceService {
-  
-  constructor() { }
-  getClasse(){
-     let matieres =[
-      {
-       'Nom':'l2' ,
-        'niveau':'premiere' ,
-        'serie':'s2',
-        'nombres_eleve':'45'
-      }
-      ,
+   constructor(private httpClient:HttpClient) { }
 
-      {
-        'Nom':'lb' ,
-         'niveau':'terminal' ,
-         'serie':'s2',
-         'nombres_eleve':'43'
-       }
-        ]
-    return matieres
+   host="http://localhost:3000/"
+  
+ 
+  getMatieres(){
+    //  this.httpClient.get(this.host+"matieres")
+    return this.httpClient.get(this.host+"/matieres")
+    //  let matieres =[
+    //   {
+    //    'Nom':'Imformatique' ,
+    //     'niveau':'angular' ,
+    //     'serie':'45',
+    //     'nombres_eleve':'Mbingue'
+    //   }
+    //   ,
+
+    //   {
+    //     'Nom':'imformatique' ,
+    //      'niveau':'laravel' ,
+    //      'serie':'3',
+    //      'nombres_eleve':'cherif'
+    //    }
+    //     ]
+    // return matieres
   }
 
   

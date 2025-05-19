@@ -1,7 +1,8 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatiereServiceService } from '../../services/matieres/matiere-service.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-list-matiere',
@@ -17,9 +18,18 @@ export class ListMatiereComponent implements OnInit{
   }
 
 ngOnInit(){
-  this.matieres= this.matiereService.getClasse()
-  this.nbrClasse=this.matieres.length
-  console.log(this.nbrClasse)
+ this.matiereService.getMatieres().subscribe(
+       (response)=>{
+        this.matieres=response
+        // console.log(response)
+      },
+      (error)=>{
+        console.log(error)
+      }
+
+ )
+  // this.nbrClasse=this.matieres.length
+  // console.log(this.nbrClasse)
   // console.log(this.classes)
   // console.log("composants initialiser")
   // let result=3*3+3
@@ -35,3 +45,19 @@ addClasse(){
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
