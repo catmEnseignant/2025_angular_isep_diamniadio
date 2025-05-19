@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,25 +6,13 @@ import { Injectable } from '@angular/core';
 })
 export class MatiereServiceService {
 
-  constructor() { }
+  host="http://localhost:3000"
 
-  getMatiere(){
-    let matieres = [ 
-      {
-        'nom':'terminal-lb',
-        'description':'terminal',
-        'coeficcient':'l2',
-        'nombre_jour':32
-      }
-      ,
-      {
-        'nom':'second-lb',
-        'description':'second',
-        'coefficient':'s2',
-        'nombre_jour':22,
-      }
-    ]
-    return matieres;
+  constructor(private httpClient:HttpClient) { }
+
+  getMatieres(){
+    return this.httpClient.get(this.host+"/matieres")
+
   }
 }
 

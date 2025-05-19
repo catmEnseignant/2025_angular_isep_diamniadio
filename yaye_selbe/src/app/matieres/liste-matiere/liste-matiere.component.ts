@@ -16,11 +16,17 @@ export class ListeMatiereComponent implements OnInit{
    constructor(private route: Router,private matiereService: MatiereServiceService) {
      console.log('selbe yooum');
    }
-   ngOnInit(){
-    this.matieres=this.matiereService.getMatiere()
+   ngOnInit() {
+    this.matiereService.getMatieres().subscribe(
+      (response) => {
+        this.matieres = response;
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
+  }
    
-     
-   }
   addClasse(){
     return this.route.navigate(["matieres/form-matiere"])
     

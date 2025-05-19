@@ -16,7 +16,7 @@
     </div>
     <div class="card-body">
 
-        <table class="table">
+        <table class="table" *ngIf="matieres && matieres.length > 0">
             <thead>
                 <tr>
                     <th scope="col">Nom</th>
@@ -36,6 +36,13 @@
                 
             </tbody>
         </table>
+        <!-- Message si aucune matiere -->
+    <p *ngIf="matieres && matieres.length === 0" class="text-center text-muted">
+      Aucune matieres trouvée pour le moment.
+    </p>
+
+    <!-- Affichage JSON pour debug (optionnel) -->
+    <!-- <pre>{{ classes | json }}</pre> -->
 
     </div>
 
