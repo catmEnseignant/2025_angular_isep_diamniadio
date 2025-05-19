@@ -24,7 +24,7 @@ export class ListeMatiereComponent implements OnInit {
 
   
   ngOnInit(){
-    this.matiereService.getClasses().subscribe(
+    this.matiereService.getMatieres().subscribe(
       (response) =>{
         this.matieres = response
         console.log(response)
