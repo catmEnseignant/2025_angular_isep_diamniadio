@@ -1,0 +1,39 @@
+{
+    "classes":[
+
+        {
+            "nom": "seconde",
+            "niveau": "second",
+            "serie": "s2",
+            "nombre": "23"
+    
+        },
+
+        {
+            "nom": "terminal-lA",
+            "niveau": "terminal",
+            "serie": "L2",
+            "nombre": "45"
+          }
+        
+    ],
+
+    "matieres":[
+
+        {
+            "nom": "react",
+            "description": "un framwork",
+            "coefficient": "7",
+            "nbreJour": "23"
+    
+        },
+
+        {
+            "nom": "Angular",
+            "description": "un framwork",
+            "coefficient": "8",
+            "nbreJour": "44"
+    
+        }
+    ]
+}
