@@ -1,26 +1,37 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { MatieresServiceService } from '../../services/matieres/matieres-servise.service';
 
 @Component({
   selector: 'app-form-matieres',
   imports: [ReactiveFormsModule],
   templateUrl: './form-matieres.component.html',
-  styleUrl: './form-matieres.component.css'
+  styleUrls: ['./form-matieres.component.css']
 })
-export class FormMatieresComponent {
-
-  matiereform:FormGroup;
-  constructor(private fb:FormBuilder){
+export class FormMatieresComponent implements OnInit{
+  matiereform: FormGroup;
+  matieredit:any;
+  isedit:any;
+  constructor(private fb: FormBuilder, private matieresService: MatieresServiceService ) { 
     this.matiereform = this.fb.group({
-      Code:[''],
-      Nom:[''],
-      Description:[''],
-      Coefficient:['']
-    })
-    
+      Code: [''],
+      Nom: [''],
+      Description: [''],
+      Coefficient: [''],
+    });
   }
-  storeMatiere(){
-    console.log(this.matiereform.value);
+   ngOnInit(): void {
+      this.isedit=localStorage.getItem("edit")
+      console.log(this.isedit)
+    }
+  storeMatieres() {
+    this.matieresService.storeMatieres(this.matiereform.value).subscribe( 
+      (response) => {
+        alert("Succès");
+      },
+      (error) => {
+        console.error("Erreur");
+      }
+    );
   }
-
 }

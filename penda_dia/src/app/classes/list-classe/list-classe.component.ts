@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ClasseServiseService } from '../../services/classes/classes-servise.service';
 
-
 @Component({
   selector: 'app-list-classe',
   imports: [CommonModule],
@@ -12,7 +11,6 @@ import { ClasseServiseService } from '../../services/classes/classes-servise.ser
 })
 export class ListClasseComponent  implements OnInit{
   classes: any;
-  
   
   constructor( private route: Router, private classeService: ClasseServiseService) {
     console.log('constructeur');
@@ -31,6 +29,17 @@ export class ListClasseComponent  implements OnInit{
   }
    
   addClasse(){
+    localStorage.setItem("editClasse","0");
     return this.route.navigate(["classes/form-classe"]);
+  }
+  editClasse(edit:any){
+    console.log(edit)
+    edit=JSON.stringify(edit)
+    localStorage.setItem("classeCourant",edit)
+    localStorage.setItem("editClasse","1")
+    return this.route.navigate(["classes/form-classe"]);
+  }
+  deleteClasse(){
+    return this.route.navigate(["classes/liste-classe"]);
   }
 }

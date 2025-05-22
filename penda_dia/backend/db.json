@@ -1,48 +1,104 @@
 {
-    "classes":[ 
-        {"nom" : "DFE",
-          "niveau" : "BTS",
-          "Serie" : "TIC",
-          "nombre_eleve" : "33"
-        }
-        ,
-        {
-          "nom" : "DBE",
-          "niveau" : "BTS",
-          "Serie": "TIC",
-          "nombre_eleve" : "41"
-        },
-        {
-          "nom" : "Carosserie",
-          "niveau" : "BTS",
-          "Serie" : "Automobile",
-          "nombre_eleve" : "37"
-        },
-        {
-          "nom" : "Climatisation et Chauffage",
-          "niveau" : "BTS",
-          "Serie" : "Automobile",
-          "nombre_eleve" : "43"
-        }
-      ],
-
-    "matieres": [ 
-        {"code" : "AGl",
-          "nom" : "Angular",
-          "description" : "creaction de site web",
-          "coefficient" : "2"
-        },
-        {
-          "code" : "LRV",
-          "nom" : "Laravel",
-          "description" : "creaction application ",
-          "coefficient" : "3"
-        },
-        {
-          "code" : "Dev web",
-          "nom" : "HTML CSS",
-          "description" : "creaction site web",
-          "coefficient" : "1"
-        }
-    ]
+  "classes": [
+    {
+      "Nom": "DFE",
+      "Niveau": "BTS",
+      "Serie": "TIC",
+      "nombre_eleve": "33",
+      "id": "5602"
+    },
+    {
+      "Nom": "DBE",
+      "Niveau": "BTS",
+      "Serie": "TIC",
+      "nombre_eleve": "41",
+      "id": "8790"
+    },
+    {
+      "Nom": "Carosserie",
+      "Niveau": "BTS",
+      "Serie": "Automobile",
+      "Nombre_eleve": "37",
+      "id": "83e8"
+    },
+    {
+      "Nom": "Climatisation et Chauffage",
+      "Niveau": "BTS",
+      "Serie": "Automobile",
+      "nombre_eleve": "43",
+      "id": "cfef"
+    },
+    {
+      "id": "5609",
+      "Nom": "APD",
+      "Niveau": "BTS",
+      "Serie": "TIC",
+      "nombre_eleve": 55
+    },
+    {
+      "id": "e616",
+      "Nom": "ABD",
+      "Niveau": "master",
+      "Serie": "tic",
+      "nombre_eleve": 32
+    },
+    {
+      "id": "e59d",
+      "Nom": "app",
+      "Niveau": "S1",
+      "Serie": "Master",
+      "nombre_eleve": 66
+    },
+    {
+      "id": "4944",
+      "Nom": "ADF",
+      "Niveau": "BTS",
+      "Serie": "S4",
+      "nombre_eleve": "82"
+    },
+    {
+      "id": "e447",
+      "Nom": "DFE",
+      "Niveau": "BTS",
+      "Serie": "S3",
+      "nombre_eleve": "43"
+    }
+  ],
+  "matieres": [
+    {
+      "Code": "AGl",
+      "Nom": "Angular",
+      "Description": "creaction de site web",
+      "Coefficient": "2",
+      "id": "1af7"
+    },
+    {
+      "Code": "LRV",
+      "Nom": "Laravel",
+      "Description": "creaction application ",
+      "Coefficient": "3",
+      "id": "1cf5"
+    },
+    {
+      "Code": "Dev web",
+      "Nom": "HTML CSS",
+      "Description": "creaction site web",
+      "Coefficient": "1",
+      "id": "f346"
+    },
+    {
+      "id": "515b",
+      "Code": "UI",
+      "Nom": "Figma",
+      "Description": "Design",
+      "Coefficient": 4
+    },
+    {
+      "id": "fbd7",
+      "Code": "NJKS",
+      "Nom": "Forms",
+      "Description": "design frontend",
+      "Coefficient": 6
+    }
+  ]
 }

@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { url } from 'inspector';
 
 @Injectable({
   providedIn: 'root'
@@ -10,10 +9,12 @@ export class ClasseServiseService {
 
   constructor(private httpClient: HttpClient){}
 
-  getClass(){
-    this.httpClient.get(this.host+"/classes")
-    
+  getClass(){    
     return this.httpClient.get(this.host+"/classes")
+  }
 
- }
+  storeClasse(classe:any){
+    return this.httpClient.post(this.host+"/classes" , classe)
+
+  }
 }
