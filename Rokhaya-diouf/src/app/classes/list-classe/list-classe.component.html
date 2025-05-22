@@ -21,6 +21,7 @@
             <th scope="col">Nom</th>
             <th scope="col">Niveau</th>
             <th scope="col">Nombre d'eleve</th>
+            <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -29,6 +30,15 @@
             <td>{{classe.niveau}}</td>
             <td>{{classe.serie}}</td>
             <td>{{classe.nombres_eleve}}</td>
+            <!-- Exemple dans une table ou une liste -->
+        <td>
+          <button class="btn btn-warning btn-sm me-2" (click)="editClasse(classe)">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button class="btn btn-danger btn-sm" >
+            <i class="bi bi-trash"></i>
+         </button>
+        </td>
           </tr>
         </tbody>
       </table>

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder ,FormGroup, ReactiveFormsModule} from '@angular/forms';
+import { MatiereServiceService } from '../../services/matieres/matiere-service.service';
 
 @Component({
   selector: 'app-form.matieres',
@@ -8,10 +9,12 @@ import { FormBuilder ,FormGroup, ReactiveFormsModule} from '@angular/forms';
   styleUrl: './form.matieres.component.css'
 })
 
-export class FormMatieresComponent {
+export class FormMatieresComponent implements OnInit{
   classform:FormGroup
+  classed:any
+  isedit:any
 
-  constructor(private fb:FormBuilder){
+  constructor(private fb:FormBuilder ,private matiereService:MatiereServiceService){
 
     this.classform= this.fb.group({
       nom:[''],
@@ -20,8 +23,25 @@ export class FormMatieresComponent {
       nombres_eleve:[''],
     })
   }
+
   
-  storClass(){
-    console.log(this.classform.value)
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  
+  // storMatiere(){
+  //   console.log(this.classform.value)
+  // }
+    storMatiere(){
+    // console.log(this.classform.value)
+    this.matiereService.storeMatiere(this.classform.value).subscribe(
+      (response) => {
+        alert('success')
+      },
+      (error) => {
+        console.log('veillez reeseyer plutart')
+      }
+    )
+
   }
 }

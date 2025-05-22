@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatiereServiceService } from '../../services/matieres/matiere-service.service';
 import { CommonModule } from '@angular/common';
@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './liste.matieres.component.html',
   styleUrl: './liste.matieres.component.css'
 })
-export class ListeMatieresComponent {
+export class ListeMatieresComponent implements OnInit{
   matieres:any //any la variable prent n'importe quel type
   constructor(private route:Router,private matiereService:MatiereServiceService){
     console.log("rokhaya-diouf")
@@ -43,10 +43,27 @@ export class ListeMatieresComponent {
     // console.log(this.classes.length)
   }
 
-
-  addClasse(){
-    console.log("add initialiser")
-    return this.route.navigate(["matieres/form-matieres"])
-  }
+  // addClasse(){
+  //   console.log("add initialiser")
+  //   return this.route.navigate(["matieres/form-matieres"])
+  // }
   
+    addClasse(){
+    // console.log("add initialiser")
+    localStorage.setItem("editMatiere", "0")
+    return this.route.navigate(["matieres/form-matiere"])
+  }
+
+
+editMatiere(editMatiere:any){
+  console.log(editMatiere);
+  editMatiere=JSON.stringify(editMatiere)
+  localStorage.setItem("currentMatiere", editMatiere)
+  localStorage.setItem("editMatiere","1")
+  
+  //comme que current ne peut ps Stoker un objet on converti editClasse a un caractere(dans le console log )
+  //onInit permet de initialiser
+  return this.route.navigate(["matieres/form-matiere"])
+}
+
 }

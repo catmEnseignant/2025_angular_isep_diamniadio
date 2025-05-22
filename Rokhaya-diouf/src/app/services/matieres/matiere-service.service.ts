@@ -8,12 +8,15 @@ export class MatiereServiceService {
 
   constructor(private httpClient:HttpClient) { }
 
-  host="http://localhost:3000/"
+  host="http://localhost:3000"
 
   getMatieres(){
 
     return this.httpClient.get(this.host+ "/matieres")
 //observable  reponse au niveau du serveur
   }
+    storeMatiere(matiere:any){
+    return this.httpClient.post(this.host+ "/matieres", matiere)
 
+  }
 }

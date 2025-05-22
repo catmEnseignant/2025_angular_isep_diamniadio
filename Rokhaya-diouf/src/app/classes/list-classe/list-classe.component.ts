@@ -39,8 +39,23 @@ export class ListClasseComponent implements OnInit {
   }
 
   addClasse(){
-    console.log("add initialiser")
+    // console.log("add initialiser")
+    localStorage.setItem("editClasse", "0")
     return this.route.navigate(["classes/form-classe"])
   }
+
+
+editClasse(editClasse:any){
+  console.log(editClasse);
+  editClasse=JSON.stringify(editClasse)
+  localStorage.setItem("currentClasse", editClasse)
+  localStorage.setItem("editClasse","1")
+  
+  //comme que current ne peut ps Stoker un objet on converti editClasse a un caractere(dans le console log )
+  //onInit permet de initialiser
+  return this.route.navigate(["classes/form-classe"])
+}
+
+
 
 }

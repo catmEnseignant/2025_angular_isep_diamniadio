@@ -1,50 +1,111 @@
 {
-    "classes":[
-        {
-          "nom":"dbe",
-          "niveau":"3emesemestre",
-          "serie":"s2",
-          "nombres_eleve":"33"
-        },
-        {
-            "nom":"dbe",
-            "niveau":"3emesemestre",
-            "serie":"s2",
-            "nombres_eleve":"33"
-          },
-
-          {
-            "nom":"dfe",
-            "niveau":"3emesemestre",
-            "serie":"s2",
-            "nombres_eleve":"26"
-          }
-      ]
-      ,
-
-
-
-    "matieres":[
-        {
-          "nom":"dbe",
-          "niveau":"3emesemestre",
-          "serie":"s2",
-          "nombres_eleve":"33"
-        }
-        ,
-        {
-          "nom":"dfe",
-          "niveau":"'3emesemestre",
-          "serie":"s2",
-          "nombres_eleve":"26"
-        }
-        ,
-        {
-          "nom":"dfe",
-          "niveau":"'3emesemestre",
-          "serie":"s2",
-          "nombres_eleve":"26"
-        }
-  
-      ]
+  "classes": [
+    {
+      "nom": "dbe",
+      "niveau": "3emesemestre",
+      "serie": "s2",
+      "nombres_eleve": "33",
+      "id": "ed07"
+    },
+    {
+      "nom": "dbe",
+      "niveau": "3emesemestre",
+      "serie": "s2",
+      "nombres_eleve": "33",
+      "id": "1673"
+    },
+    {
+      "nom": "dfe",
+      "niveau": "3emesemestre",
+      "serie": "s2",
+      "nombres_eleve": "26",
+      "id": "b07d"
+    },
+    {
+      "id": "47fc",
+      "nom": "jkdklsc",
+      "niveau": "ndksm",
+      "serie": "joskjm",
+      "nombres_eleve": "ndkw"
+    },
+    {
+      "id": "7766",
+      "nom": "khk",
+      "niveau": "",
+      "serie": "n,mn,",
+      "nombres_eleve": ""
+    },
+    {
+      "id": "12d5",
+      "nom": "khk",
+      "niveau": "",
+      "serie": "n,mn,",
+      "nombres_eleve": ""
+    }
+  ],
+  "matieres": [
+    {
+      "nom": "dbe",
+      "niveau": "3emesemestre",
+      "serie": "s2",
+      "nombres_eleve": "33",
+      "id": "103b"
+    },
+    {
+      "nom": "dfe",
+      "niveau": "'3emesemestre",
+      "serie": "s2",
+      "nombres_eleve": "26",
+      "id": "3376"
+    },
+    {
+      "nom": "dfe",
+      "niveau": "'3emesemestre",
+      "serie": "s2",
+      "nombres_eleve": "26",
+      "id": "8e8c"
+    },
+    {
+      "id": "a4c2",
+      "nom": "jlj",
+      "niveau": "",
+      "serie": "",
+      "nombres_eleve": ""
+    },
+    {
+      "id": "1501",
+      "nom": "jlj",
+      "niveau": "",
+      "serie": "",
+      "nombres_eleve": ""
+    },
+    {
+      "id": "9b89",
+      "nom": "jlj",
+      "niveau": "ncdkvn",
+      "serie": "nfdkmnv",
+      "nombres_eleve": "jlfcdmvè;"
+    },
+    {
+      "id": "c323",
+      "nom": "kn",
+      "niveau": "ugki",
+      "serie": "jkmjlmé",
+      "nombres_eleve": "ccvhhbjn"
+    },
+    {
+      "id": "e202",
+      "nom": "nbkd",
+      "niveau": "rokhaya",
+      "serie": "nckldxs",
+      "nombres_eleve": "diouf"
+    },
+    {
+      "id": "fb24",
+      "nom": "nbkd",
+      "niveau": "rokhaya",
+      "serie": "nckldxs",
+      "nombres_eleve": "diouf"
+    }
+  ]
 }

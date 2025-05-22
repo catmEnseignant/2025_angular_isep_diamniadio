@@ -21,6 +21,7 @@
           <th scope="col">Nom</th>
           <th scope="col">Niveau</th>
           <th scope="col">Nombre d'eleve</th>
+          <th scope="col">Action</th>
         </tr>
       </thead>
       <tbody>
@@ -29,6 +30,14 @@
           <td>{{matiere.niveau}}</td>
           <td>{{matiere.serie}}</td>
           <td>{{matiere.nombres_eleve}}</td>
+           <td>
+          <button class="btn btn-warning btn-sm me-2" (click)="editMatiere(matiere)">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button class="btn btn-danger btn-sm" >
+            <i class="bi bi-trash"></i>
+         </button>
+        </td>
         </tr>
       </tbody>
     </table>
