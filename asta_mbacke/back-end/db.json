@@ -1,37 +1,62 @@
 {
-    "classes":[ 
-        {
-          "nom": "second-la",
-          "nombre_eleve":23,
-          "serie":"s2",
-          "niveau":"second"
-        },
-  
-        {
-          "nom": "second-lb",
-          "nombre_eleve": 36,
-          "serie":"s1",
-          "niveau":"second"
-        }
-    ],
-
-
-
-
-    "matieres": [ 
-      {
-        "nom": "Sla",
-        "description":"second",
-        "serie":"s2",
-        "coefficient":"5"
-      },
-
-      {
-        "nom": "Slb",
-        "description": "second",
-        "serie":"s1",
-        "coefficient":"6"
-      }
-]
+  "classes": [
+    {
+      "nom": "second-la",
+      "nombre_eleve": 23,
+      "serie": "s2",
+      "niveau": "second",
+      "id": "483d"
+    },
+    {
+      "nom": "second-lb",
+      "nombre_eleve": 36,
+      "serie": "s1",
+      "niveau": "second",
+      "id": "c655"
+    },
+    {
+      "id": "6536",
+      "nom": "ly",
+      "niveau": "l2",
+      "serie": "tic",
+      "nombre_eleve": "40"
+    },
+    {
+      "id": "1b69",
+      "nom": "ly",
+      "niveau": "l2",
+      "serie": "tic",
+      "nombre_eleve": "40"
+    },
+    {
+      "id": "b86d",
+      "nom": "m,lo",
+      "niveau": ",mj,kl",
+      "serie": "lki",
+      "nombre_eleve": "999"
+    }
+  ],
+  "matieres": [
+    {
+      "nom": "Sla",
+      "description": "second",
+      "serie": "s2",
+      "coefficient": "5",
+      "id": "a4f4"
+    },
+    {
+      "nom": "Slb",
+      "description": "second",
+      "serie": "s1",
+      "coefficient": "6",
+      "id": "35c2"
+    },
+    {
+      "id": "4310",
+      "nom": "rrf",
+      "description": "ddd",
+      "serie": "ddf3df",
+      "coefficient": "34"
+    }
+  ]
 }
-

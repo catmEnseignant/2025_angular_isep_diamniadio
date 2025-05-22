@@ -13,6 +13,9 @@ export class MatiereServiceService {
 
   constructor(private httpClient: HttpClient) { }
 
+  storeMatiere(matiere: any){
+    return  this.httpClient.post(this.host + "/matieres",matiere)
+  }
   getMatieres(){
       return  this.httpClient.get(this.host + "/matieres")
 

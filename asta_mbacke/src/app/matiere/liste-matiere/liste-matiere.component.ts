@@ -40,8 +40,17 @@ export class ListeMatiereComponent implements OnInit {
 
   }
 
+  editMatiere(editMatiere: any){
+    console.log(editMatiere)
+    editMatiere = JSON.stringify(editMatiere)
+    localStorage.setItem("curentMatiere", editMatiere)
+    localStorage.setItem("editMatiere", "1")
+    return this.route.navigate(["/matiere/form-matiere"])
+  }
+
   addMatiere(){
-    console.log("add initialiser")
+    localStorage.setItem("editMatiere", "0")
+    //console.log("add initialiser")
     return this.route.navigate(["/matiere/form-matiere"])
   }
 

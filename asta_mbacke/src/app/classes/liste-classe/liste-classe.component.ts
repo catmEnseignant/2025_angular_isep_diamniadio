@@ -4,6 +4,7 @@ import { ClasseServiceService } from '../../services/classes/classe-service.serv
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { error } from 'console';
+import { json } from 'stream/consumers';
 
 @Component({
   selector: 'app-liste-classe',
@@ -15,6 +16,7 @@ export class ListeClasseComponent implements OnInit{
 
   classes: any
   nombre_eleve: number = 0
+
   constructor(private route:Router, private classeService:ClasseServiceService){
     console.log("constructeurr")
   }
@@ -37,9 +39,19 @@ export class ListeClasseComponent implements OnInit{
 
   }
 
+  editClasse(editClasse: any){
+    console.log(editClasse)
+    editClasse = JSON.stringify(editClasse)
+    localStorage.setItem("curentClasse", editClasse)
+    localStorage.setItem("editClasse", "1")
+    return this.route.navigate(["/classes/form-classe"])
+  }
+
   addClasse(){
-    console.log("add initialiser")
-    return this.route.navigate(["/classes/from-classe"])
+
+    localStorage.setItem("editClasse", "0")
+    //console.log("add initialiser")
+    return this.route.navigate(["/classes/form-classe"])
   }
 
 
