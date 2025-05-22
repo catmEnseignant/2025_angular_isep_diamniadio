@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule} from '@angular/forms'
+import { ClasseServiceService } from '../../services/classes/classe-service.service';
+import { response } from 'express';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form-classe',
@@ -7,11 +10,14 @@ import { FormBuilder, FormGroup, ReactiveFormsModule} from '@angular/forms'
   templateUrl: './form-classe.component.html',
   styleUrl: './form-classe.component.css'
 })
-export class FormClasseComponent {
+export class FormClasseComponent implements OnInit{
 
   classform:FormGroup
+  Classedit:any
+  isedit:any
 
-  constructor( private fb:FormBuilder){
+
+  constructor( private fb:FormBuilder, private classeService: ClasseServiceService, private route:Router){
     this.classform= this.fb.group({
       nom:[''],
       niveau:[''],
@@ -21,8 +27,22 @@ export class FormClasseComponent {
     })
   
   }
+  
+  ngOnInit(): void {
+    this.isedit=localStorage.getItem("editClasse")
+    console.log(this.isedit)
+  }
   storeClasse(){
-    console.log(this.classform.value)
+    this.classeService.storeClasse(this.classform.value).subscribe(
+     (response) => {
+      return this.route.navigate(["classes/list-classe"])
+      // alert('success')
+     },
+     (error) =>{
+      console.log('Veillez reesseyer plutart ')
+
+     }
+    )    // console.log(this.classform.value)
   }
 
 

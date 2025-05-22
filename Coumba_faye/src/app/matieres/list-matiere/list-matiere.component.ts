@@ -16,10 +16,27 @@ export class ListMatiereComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.matieres = this.matiereService.getMatiere()
-    
+  
+   this.matiereService.getMatieres().subscribe(
+    (response) =>  {
+      this.matieres = response
+    },
+    (error) =>  {
+      console.log(error)
+    }
+  )
+    // this.nombreClasse(this.classes.length)
+    // console.log(this.nombreClasse)
+
   }
-  addClasse(){
+     editMatiere(editMatiere:any){
+    console.log(editMatiere)
+    editMatiere = JSON.stringify(editMatiere)
+    localStorage.setItem("currentMatiere", editMatiere)
+    localStorage.setItem("editMatiere", "1")
+   return this.route.navigate(["matieres/form-matiere"])
+  
+  }  addClasse(){
     return this.route.navigate(["matieres/form-matiere"])
     
   }

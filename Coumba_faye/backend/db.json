@@ -1,29 +1,97 @@
 {
-    "classes": [
-        {"nom":"Second-lA",
-          "niveau":"Second",
-          "serie":"S1",
-          "nombre_eleve":"23"
-        },
-
-        {"nom":"Second-lA",
-          "niveau":"Second",
-          "serie":"S1",
-          "nombre_eleve":"23"
-        }
-          
-      ],
-       "matieres": [
-        {"nom":"UMl",
-          "description":"Unified Modeling Lanugage",
-          "coefficient":"6",
-          "nombre_de_jours":"2 jours"
-        },
-          {"nom":"Angular",
-            "description":"Un fromework open-source",
-            "coefficient":"6",
-            "nombre_de_jours":"3 jours"
-           }
-        ]
-
-    }        
+  "classes": [
+    {
+      "nom": "Second-lA",
+      "niveau": "Second",
+      "serie": "S1",
+      "nombre_eleve": "23",
+      "id": "b8ad"
+    },
+    {
+      "nom": "Second-lA",
+      "niveau": "Second",
+      "serie": "S1",
+      "nombre_eleve": "23",
+      "id": "c3d3"
+    },
+    {
+      "id": "424b",
+      "nom": "Second-lA",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "6622",
+      "nom": "Second-lA",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "1939",
+      "nom": "Second-lB",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "b5d4",
+      "nom": "Second-lC",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "aae2",
+      "nom": "Second-lC",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "a782",
+      "nom": "Second-lE",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "9f3d",
+      "nom": "Second-lD",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "2693",
+      "nom": "Second-lDDD",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "c745",
+      "nom": "Second-lDDD",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    }
+  ],
+  "matieres": [
+    {
+      "nom": "UMl",
+      "description": "Unified Modeling Lanugage",
+      "coefficient": "6",
+      "nombre_de_jours": "2 jours",
+      "id": "97fe"
+    },
+    {
+      "nom": "Angular",
+      "description": "Un fromework open-source",
+      "coefficient": "6",
+      "nombre_de_jours": "3 jours",
+      "id": "3c3e"
+    }
+  ]
+}

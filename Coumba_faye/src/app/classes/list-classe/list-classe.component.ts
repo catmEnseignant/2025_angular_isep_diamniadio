@@ -32,7 +32,15 @@ export class ListClasseComponent implements OnInit{
     // console.log(this.nombreClasse)
   
   }
+  editClasse(editClasse:any){
+    console.log(editClasse)
+    editClasse = JSON.stringify(editClasse)
+    localStorage.setItem("currentClasse", editClasse)
+    localStorage.setItem("editClasse", "1")
+   return this.route.navigate(["classes/form-classe"])
+  }
   addClasse(){
+    localStorage.setItem("editClasse", "0")
     return this.route.navigate(["classes/form-classe"])
     
   }

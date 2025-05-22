@@ -28,6 +28,14 @@
                     <td>{{matiere.description}}</td>
                     <td>{{matiere.coefficient}}</td>
                     <td>{{matiere.nombre_de_jours}}</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm me-2" (click)="editMatiere(matiere)">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>
                 </tr>
             </tbody>
         </table>
