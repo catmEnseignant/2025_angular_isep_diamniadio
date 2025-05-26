@@ -9,11 +9,15 @@ export class MatiereServiceService {
     constructor(private httpClient:HttpClient) { }
 
     getClasse(){
-      return  this.httpClient.get(this.host +"/classes")
-
-
+      return  this.httpClient.get(this.host +"/matieres")
 
     }
+
+    storeMatiere(matiere :any){
+      return  this.httpClient.post(this.host +"/matieres", matiere)
+
+    }
+
 
   /*constructor(private httpClient:HttpClient) { }
 

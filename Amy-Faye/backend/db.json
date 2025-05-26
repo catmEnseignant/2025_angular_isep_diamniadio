@@ -1,69 +1,111 @@
 {
-  "classes":  [
-    { "nom":"second-l2",
-      "nbreClass":23,
+  "classes": [
+    {
+      "nom": "second-l2",
+      "nbreClass": 23,
       "serie": "l2",
-      "niveau": "seconde"
-
+      "niveau": "seconde",
+      "id": "031a"
     },
-
-
-
-    { "nom":"second-s1",
-      "nbreClass":36,
+    {
+      "nom": "second-s1",
+      "nbreClass": 36,
       "serie": "s1",
-      "niveau": "premier"
-    }
-    ,
-
-    { "nom":"second-l2",
-      "nbreClass":43,
+      "niveau": "premier",
+      "id": "2e11"
+    },
+    {
+      "nom": "second-l2",
+      "nbreClass": 43,
       "serie": "l2",
-      "niveau": "troisieme"
-
-    }
-    ,
-
-
-
-    { "nom":"second-s1",
-      "nbreClass":50,
+      "niveau": "troisieme",
+      "id": "df91"
+    },
+    {
+      "nom": "second-s1",
+      "nbreClass": 50,
       "serie": "s1",
-      "niveau": "terminal"
+      "niveau": "terminal",
+      "id": "5af8"
+    },
+    {
+      "id": "2770",
+      "nom": "Faye",
+      "niveau": "Licence2",
+      "serie": "DFE",
+      "nombre_eleve": "35"
+    },
+    {
+      "id": "d82c",
+      "nom": "Ndiaye",
+      "niveau": "Licence3",
+      "serie": "DBE",
+      "nbreClass": "33"
+    },
+    {
+      "id": "32a1",
+      "nom": "",
+      "niveau": "",
+      "serie": "",
+      "nbreClass": "32"
     }
-  ]
-  ,
-
-
-
-  "matieres":  [
-    { "nom":"second-l2",
-      "nbreMatiere":15,
+  ],
+  "matieres": [
+    {
+      "nom": "second-l2",
+      "nbreMatiere": 15,
       "serie": "l2",
-      "niveau": "seconde"
-
-    }
-    ,
-
-
-    { "nom":"second-s1",
-      "nbreMatiere":20,
+      "niveau": "seconde",
+      "id": "5c72"
+    },
+    {
+      "nom": "second-s1",
+      "nbreMatiere": 20,
       "serie": "s1",
-      "niveau": "seconde"
-    }
-    ,
-
-    { "nom":"premier-s1",
-      "nbreMatiere":22,
+      "niveau": "seconde",
+      "id": "d444"
+    },
+    {
+      "nom": "premier-s1",
+      "nbreMatiere": 22,
       "serie": "s1",
-      "niveau": "premier"
-    }
-    ,
-
-    { "nom":"premier-s2",
-      "nbreMatiere":18,
+      "niveau": "premier",
+      "id": "e840"
+    },
+    {
+      "nom": "premier-s2",
+      "nbreMatiere": 18,
       "serie": "s2",
-      "niveau": "premier"
+      "niveau": "premier",
+      "id": "f66a"
+    },
+    {
+      "id": "8f6d",
+      "nom": "Dieye",
+      "niveau": "Licence3",
+      "serie": "APD",
+      "nbreMatiere": "32"
+    },
+    {
+      "id": "b162",
+      "nom": "Diop",
+      "niveau": "Licence2",
+      "serie": "ABD",
+      "nbreMatiere": "35"
+    },
+    {
+      "id": "eb78",
+      "nom": "fall",
+      "niveau": "Licence3",
+      "serie": "APD",
+      "nbreMatiere": "40"
+    },
+    {
+      "id": "f383",
+      "nom": "fall",
+      "niveau": "Licence3",
+      "serie": "APD",
+      "nbreMatiere": "40"
     }
   ]
 }

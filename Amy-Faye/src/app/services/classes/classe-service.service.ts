@@ -8,6 +8,11 @@ export class ClasseServiceService {
 
   constructor(private httpClient:HttpClient) { }
 
+  storeClasse(classe :any){
+    return  this.httpClient.post(this.host +"/classes", classe)
+
+  }
+
   getClasse(){
     return  this.httpClient.get(this.host +"/classes")
 
