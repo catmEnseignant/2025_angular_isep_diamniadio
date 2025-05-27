@@ -13,4 +13,13 @@ export class ClassesServicesService {
   public getClasses() {
     return this.httpClint.get(this.host + "/classes");
   }
+
+  // methode pour ajouter des donnees avec (POST)
+  public storeClasses(classe : any) {
+    return this.httpClint.post(this.host + "/classes", classe);
+  }
+
+  public editClasse () {
+    
+  }
 }

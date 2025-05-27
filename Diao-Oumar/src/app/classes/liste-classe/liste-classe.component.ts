@@ -27,8 +27,17 @@ export class ListeClasseComponent implements OnInit{
   }
   
   public addClasse () {
+    localStorage.setItem("editClasse", "0");
     this.route.navigate(["classes/form-classe"]);
     console.log("this.addClasse")
+  }
+
+  public editClasse (id:any) {
+    console.log(id);
+    id = JSON.stringify(id);
+    localStorage.setItem("diao" , id);
+    localStorage.setItem("editClasse", "1");
+    return this.route.navigate(["classes/form-classe"]);
   }
 
 }

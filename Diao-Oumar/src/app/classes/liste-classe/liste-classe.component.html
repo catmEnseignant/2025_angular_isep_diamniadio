@@ -20,6 +20,7 @@
                 <th>Niveau</th>
                 <th>Serie</th>
                 <th>Nombre d'élèves</th>
+                <th>Action</th>
             </tr>
             </thead>
             <tbody>
@@ -28,6 +29,14 @@
                 <td>{{ item.niveau }}</td>
                 <td>{{ item.serie }}</td>
                 <td>{{ item.nombre }}</td>
+                <td>
+                    <button class="btn btn-warning btn-sm me-2" (click)="editClasse(item)">
+                        <i class="bi bi-pencil-square"></i>
+                    </button>
+                    <button class="btn btn-danger btn-sm">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </td>
             </tr>
             </tbody>
         </table>

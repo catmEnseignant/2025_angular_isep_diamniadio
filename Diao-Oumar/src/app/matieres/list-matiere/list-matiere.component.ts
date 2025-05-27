@@ -23,7 +23,7 @@ export class ListMatiereComponent implements OnInit{
       },
       error : (error:any) : void => {
         console.log(error);
-      }
+    }
     });
   }
 
