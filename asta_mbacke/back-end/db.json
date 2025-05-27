@@ -34,6 +34,13 @@
       "niveau": ",mj,kl",
       "serie": "lki",
       "nombre_eleve": "999"
+    },
+    {
+      "id": "7f63",
+      "nom": "asta",
+      "niveau": "second",
+      "serie": "l2",
+      "nombre_eleve": "65"
     }
   ],
   "matieres": [

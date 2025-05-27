@@ -18,3 +18,5 @@ export const APP_ROUTES: Routes = [
 
     {path:"",redirectTo:"/home",pathMatch:"full"},
 ];
+
+
