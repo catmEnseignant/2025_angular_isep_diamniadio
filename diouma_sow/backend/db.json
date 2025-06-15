@@ -1,0 +1,244 @@
+{
+  "classes": [
+    {
+      "nom": "second-la",
+      "niveau": "second",
+      "serie": "S6",
+      "nombres_eleve": 83,
+      "id": "0664"
+    },
+    {
+      "id": "d868",
+      "nom": "diouma",
+      "niveau": "terminal",
+      "serie": "ss",
+      "nombres_eleve": "87"
+    },
+    {
+      "id": "c728",
+      "nom": "diouma",
+      "niveau": "terminal",
+      "serie": "l",
+      "nombres_eleve": "77"
+    },
+    {
+      "id": "91e4",
+      "nom": "sow",
+      "niveau": "1er",
+      "serie": "informatique",
+      "nombres_eleve": "77"
+    },
+    {
+      "id": "46ce",
+      "nom": "has",
+      "niveau": "hij",
+      "serie": "vjh",
+      "nombres_eleve": "ii"
+    },
+    {
+      "id": "bd59",
+      "nom": "top",
+      "niveau": "rtyu",
+      "serie": "s2",
+      "nombres_eleve": "85"
+    },
+    {
+      "id": "302a",
+      "nom": "ygh",
+      "niveau": "ièuyhg",
+      "serie": "uytgrf",
+      "nombres_eleve": "_uythg"
+    },
+    {
+      "id": "53b5",
+      "nom": "ygh",
+      "niveau": "ièuyhg",
+      "serie": "uytgrf",
+      "nombres_eleve": "_uythg"
+    },
+    {
+      "id": "7ed3",
+      "nom": "ygh",
+      "niveau": "ièuyhg",
+      "serie": "uytgrf",
+      "nombres_eleve": "_uythg"
+    },
+    {
+      "id": "3de6",
+      "nom": "dfgh",
+      "niveau": "rtyhj",
+      "serie": "fghj",
+      "nombres_eleve": "fghj"
+    },
+    {
+      "id": "b5af",
+      "nom": "fghjk",
+      "niveau": "ik,",
+      "serie": "ezsdx",
+      "nombres_eleve": "dfg"
+    },
+    {
+      "id": "8ebb",
+      "nom": "zer",
+      "niveau": "ol;",
+      "serie": "ij",
+      "nombres_eleve": "hjk"
+    },
+    {
+      "id": "ab00",
+      "nom": "ghjk",
+      "niveau": "kj",
+      "serie": "he",
+      "nombres_eleve": "ho"
+    },
+    {
+      "id": "6b47",
+      "nom": "mee",
+      "niveau": "ouuy",
+      "serie": "moo",
+      "nombres_eleve": "poo"
+    },
+    {
+      "id": "0dd9",
+      "nom": "mee",
+      "niveau": "ouuy",
+      "serie": "moo",
+      "nombres_eleve": "poo"
+    },
+    {
+      "id": "9fe6",
+      "nom": "bineta",
+      "niveau": "6",
+      "serie": "S3",
+      "nombres_eleve": "86"
+    },
+    {
+      "id": "395a",
+      "nom": "ggg",
+      "niveau": "iugh",
+      "serie": "iuyhkj",
+      "nombres_eleve": "uiyhgfgb"
+    },
+    {
+      "id": "e2b1",
+      "nom": "ooo",
+      "niveau": "ij",
+      "serie": "ioiuj",
+      "nombres_eleve": "iuyh"
+    },
+    {
+      "id": "b7ef",
+      "nom": "ooo",
+      "niveau": "ij",
+      "serie": "ioiuj",
+      "nombres_eleve": "iuyh"
+    },
+    {
+      "id": "50a1",
+      "nom": "bb",
+      "niveau": "poiuj",
+      "serie": "kjh",
+      "nombres_eleve": "àpoiu"
+    },
+    {
+      "id": "90ec",
+      "nom": "uyi",
+      "niveau": "ui",
+      "serie": "u",
+      "nombres_eleve": "ç_oi"
+    },
+    {
+      "id": "e177",
+      "nom": "kj",
+      "niveau": "oilkj",
+      "serie": "kj",
+      "nombres_eleve": "kj"
+    },
+    {
+      "id": "d6b4",
+      "nom": "uyhg",
+      "niveau": "iujh",
+      "serie": "kjhn",
+      "nombres_eleve": "iujh"
+    },
+    {
+      "id": "0479",
+      "nom": "bob",
+      "niveau": "uyioi",
+      "serie": "yyy",
+      "nombres_eleve": "ytt"
+    },
+    {
+      "id": "a30b",
+      "nom": "bob",
+      "niveau": "uyioi",
+      "serie": "yyy",
+      "nombres_eleve": "ytt"
+    },
+    {
+      "id": "582a",
+      "nom": "sophie",
+      "niveau": "termi",
+      "serie": "S",
+      "nombres_eleve": "66"
+    },
+    {
+      "id": "c711",
+      "nom": "ttttt",
+      "niveau": "ooiu",
+      "serie": "opçoiuy",
+      "nombres_eleve": "pçouk"
+    }
+  ],
+  "matieres": [
+    {
+      "nom": "second-la",
+      "niveau": "terminal",
+      "serie": "dfe",
+      "nombre_eleve": 23,
+      "id": "eb6d"
+    },
+    {
+      "nom": "second-lA",
+      "nombres_eleve": 83,
+      "serie": "s5",
+      "niveau": "second",
+      "id": "4b03"
+    },
+    {
+      "id": "3060",
+      "nom": "bineta",
+      "niveau": "1anneé",
+      "serie": "d",
+      "nombre_eleve": "33eleve"
+    },
+    {
+      "id": "3eea",
+      "nom": "gggg",
+      "niveau": "oiodfg",
+      "serie": "oiu",
+      "nombre_eleve": "ouiythfgh"
+    },
+    {
+      "id": "1a72",
+      "nom": "oumy",
+      "niveau": "terminal",
+      "serie": "S",
+      "nombres_eleve": ""
+    },
+    {
+      "id": "50aa",
+      "nom": "oumy",
+      "niveau": "terminal",
+      "serie": "S",
+      "nombres_eleve": ""
+    },
+    {
+      "id": "9875",
+      "nom": "",
+      "niveau": "",
+      "serie": "",
+      "nombres_eleve": ""
+    }
+  ]
+}
