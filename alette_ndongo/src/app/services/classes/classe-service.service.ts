@@ -1,27 +1,31 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClasseServiceService {
+  host="http://localhost:3000"
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
-  getClasse() {
-    let classes = [
-      {
-        'nom': 'dfe',
-        'nbreClass': 23,
-        'serie': 's2',
-        'niveau': 'second'
-      },
-      {
-        'nom': 'dfe',
-        'nbreClass': 23,
-        'serie': 's2',
-        'niveau': 'second'
-      }
-    ];
-    return classes; 
+  storeClasse(classe : any){
+    return this.httpClient.post(this.host+"/classes", classe)
+
   }
+
+
+  getClasses(){
+    return this.httpClient.get(this.host+"/classes")
+
+  }
+
+  updateClasses(classe :any){
+    return this.httpClient.put(this.host+"/classes/"+classe.id,classe)
+  }
+  deleteClasse(id_classe:any) {
+  return this.httpClient.delete(this.host + "/classes/" + id_classe);
+}
+
+
 }

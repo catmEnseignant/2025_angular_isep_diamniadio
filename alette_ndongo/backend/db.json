@@ -1,0 +1,48 @@
+{
+  "classes": [
+    {
+      "nom": "dfe",
+      "nombres_eleve": 23,
+      "serie": "s2",
+      "niveau": "second",
+      "id": "d950"
+    },
+    {
+      "id": "089e",
+      "nom": "bdf",
+      "niveau": "A1",
+      "serie": "l2",
+      "nombres_eleve": 23
+    },
+    {
+      "id": "e040",
+      "nom": "Alette",
+      "niveau": "Terminal",
+      "serie": "l2",
+      "nombres_eleve": 44
+    }
+  ],
+  "matieres": [
+    {
+      "nom": "math",
+      "description": "unified",
+      "coefficient": 6,
+      "nombre_de_jours": "3 jours",
+      "id": "5805"
+    },
+    {
+      "nom": "math",
+      "description": "unified",
+      "coefficient": 6,
+      "nombre_de_jours": "3 jours",
+      "id": "096a"
+    },
+    {
+      "nom": "math",
+      "description": "unified",
+      "coefficient": 8,
+      "nombre_de_jours": "6 jours",
+      "id": "4ec9"
+    }
+  ]
+}

@@ -3,7 +3,6 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
 
-
 export const APP_ROUTES: Routes = [
   { path:"classes",
     loadChildren:() => import("./classes/classes.routes").then((c) => c.CLASSES_ROUTES),
@@ -15,6 +14,5 @@ export const APP_ROUTES: Routes = [
   component:HomeComponent
   },
   {path:"",redirectTo:"/home", pathMatch:"full"},
-  
 
-];
+];   
