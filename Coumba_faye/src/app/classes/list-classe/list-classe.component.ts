@@ -44,5 +44,22 @@ export class ListClasseComponent implements OnInit{
     return this.route.navigate(["classes/form-classe"])
     
   }
+  deleteClasse(classe:any){
+   // localStorage.setItem("editClasse", "0")
+   let sup = confirm("Voulez vous suprimer")
+   if(sup){
+    this.classeService.deleteClasse(classe.id).subscribe(
+    (response) =>  {
+      alert("Classe bien supprimer")
+    },
+    (error) =>  {
+      console.log(error)
+    }
+  )
+   }
+   console.log(classe)
+   // return this.route.navigate(["classes/form-classe"])
+    
+  }
  
 }

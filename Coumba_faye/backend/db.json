@@ -1,9 +1,9 @@
 {
   "classes": [
     {
-      "nom": "Second-lA",
+      "nom": "Second-lE",
       "niveau": "Second",
-      "serie": "S1",
+      "serie": "S2",
       "nombre_eleve": "23",
       "id": "b8ad"
     },
@@ -76,6 +76,118 @@
       "niveau": "Second",
       "serie": "S2",
       "nombre_eleve": "23"
+    },
+    {
+      "id": "2c83",
+      "nom": "Second-lD",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "c5ca",
+      "nom": "Second-lD",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "f892",
+      "nom": "Second-lD",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "nom": "Second-lD",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23",
+      "id": "b190"
+    },
+    {
+      "id": "9cf0",
+      "nom": "Second-lA",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "e2e0",
+      "nom": "Second-lA",
+      "niveau": "Second",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "0ff0",
+      "nom": "Second-lA",
+      "niveau": "L2",
+      "serie": "DFE",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "fcad",
+      "nom": "Second-lA",
+      "niveau": "L2",
+      "serie": "DFE",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "d05b",
+      "nom": "Second-le",
+      "niveau": "L2",
+      "serie": "DFE",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "ea6d",
+      "nom": "Second-l5",
+      "niveau": "Second",
+      "serie": "S1",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "88c5",
+      "nom": "Second-l5",
+      "niveau": "Second",
+      "serie": "S1",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "b371",
+      "nom": "Second-lD",
+      "niveau": "L2",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "b823",
+      "nom": "Second-lA",
+      "niveau": "Second",
+      "serie": "S1",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "34df",
+      "nom": "Second-lD",
+      "niveau": "Second",
+      "serie": "S1",
+      "nombre_eleve": "23"
+    },
+    {
+      "id": "85ac",
+      "nom": "Second-lD",
+      "niveau": "L2",
+      "serie": "S2",
+      "nombre_eleve": "23"
+    },
+    {
+      "nom": "Second-lW",
+      "niveau": "L5",
+      "serie": "S3",
+      "nombre_eleve": "34",
+      "id": "d210"
     }
   ],
   "matieres": [
